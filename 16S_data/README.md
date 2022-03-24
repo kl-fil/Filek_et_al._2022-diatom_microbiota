@@ -1,16 +1,16 @@
-#Processing NGS amplicon sequences for diatom monoculture bacterial communities and their respective source samples (16S rRNA gene amplicon sequencing)
+# Processing NGS amplicon sequences for diatom monoculture bacterial communities and their respective source samples (16S rRNA gene amplicon sequencing)
 
 Sample processing prior to sequencing is described in detail in the Methods section of the FIlek et al. 2022 manuscript. Primers used for sequencing were 515F and 806R (Apprill et al. 2015; Parada et al. 2016).
 
 General information about the system and installed plugins follows:
 
-##System versions
+## System versions
 Python version: 3.8.8
 QIIME 2 release: 2021.4
 QIIME 2 version: 2021.4.0
 q2cli version: 2021.4.0
 
-##Installed plugins
+## Installed plugins 
 alignment: 2021.4.0
 composition: 2021.4.0
 cutadapt: 2021.4.0
