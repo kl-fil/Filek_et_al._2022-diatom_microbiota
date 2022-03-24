@@ -1,16 +1,16 @@
-#----------------------------------------------------------------------------#	
-# QIIME2 16S NGS data analyses for TurtleBIOME project (Bosak lab, University#
-# of Zagreb)								 #
-# By: Klara Filek							 #
-# Region: V4 region of 16S rRNA gene					 #
-# Primers: 515F and 806R (Apprill et al. 2015; Parada et al. 2016)		 #
-# Platform: Illumina MiSeq v2 (250x2 bp paired-end)			 #
-# Sequences available at European Nucleotide Archive under accessions:	 #
-# - diatom monoclonal cultures: PRJEB47668 (ERP131963)			 #
-# - source samples: PRJEB51458 (ERP136087), specifically samples ERS10917091,#
-# ERS10917092, ERS10917093, ERS10917103, ERS10917104, ERS10917111		 #
-# Mendeley data DOI: ##TBD##						 #
-#----------------------------------------------------------------------------#
+#----------------------------------------------------------------------------
+# QIIME2 16S NGS data analyses for TurtleBIOME project (Bosak lab, University
+# of Zagreb)
+# By: Klara Filek
+# Region: V4 region of 16S rRNA gene
+# Primers: 515F and 806R (Apprill et al. 2015; Parada et al. 2016)
+# Platform: Illumina MiSeq v2 (250x2 bp paired-end)
+# Sequences available at European Nucleotide Archive under accessions:
+# - diatom monoclonal cultures: PRJEB47668 (ERP131963)
+# - source samples: PRJEB51458 (ERP136087), specifically samples ERS10917091,
+# ERS10917092, ERS10917093, ERS10917103, ERS10917104, ERS10917111
+# Mendeley data DOI: ##TBD##
+#----------------------------------------------------------------------------
 
 ##----- QIIME2 environment activation in Conda ------------------------------
 
