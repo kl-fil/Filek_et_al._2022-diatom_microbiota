@@ -1,4 +1,4 @@
-#----------------------------------------------------------------------------
+#----------------------------------------------------------------------------	
 # QIIME2 16S NGS data analyses for TurtleBIOME project (Bosak lab, University
 # of Zagreb)
 # By: Klara Filek
@@ -67,7 +67,7 @@ qiime metadata tabulate \
 qiime feature-table summarize \
   --i-table mono/demux-dada2/table-monocult.qza \
   --o-visualization mono/demux-dada2/table-monocult.qzv \
-  --m-sample-metadata-file mono/demux-dada2/20210510MonocultbiomeSeqMetadata.tsv
+  --m-sample-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv
 
 qiime feature-table tabulate-seqs \
   --i-data mono/demux-dada2/rep-seqs-dada2-monocult.qza \
@@ -93,7 +93,7 @@ qiime metadata tabulate \
 qiime taxa barplot \
   --i-table mono/demux-dada2/table-monocult.qza \
   --i-taxonomy mono/taxonomy/taxonomy.qza \
-  --m-metadata-file 20210510MonocultbiomeSeqMetadata.tsv \
+  --m-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv \
   --o-visualization mono/taxonomy/taxa-bar-plots.qzv
 
 
@@ -112,7 +112,7 @@ qiime phylogeny align-to-tree-mafft-fasttree \
 qiime empress community-plot \
   --i-tree mono/tree/rooted-tree.qza \
   --i-feature-table mono/demux-dada2/table-monocult.qza \
-  --m-sample-metadata-file 20210510MonocultbiomeSeqMetadata.tsv \
+  --m-sample-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv \
   --m-feature-metadata-file mono/taxonomy/taxonomy.qza \
   --o-visualization mono/tree/community-tree.qzv
 
@@ -136,7 +136,7 @@ qiime taxa filter-seqs \
 qiime feature-table summarize \
   --i-table mono/filtered/table-mono-fltr.qza \
   --o-visualization mono/filtered/table-mono-fltr.qzv \
-  --m-sample-metadata-file 20210510MonocultbiomeSeqMetadata.tsv
+  --m-sample-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv
 
 qiime feature-table tabulate-seqs \
   --i-data mono/filtered/rep-seqs-mono-fltr.qza \
@@ -154,7 +154,7 @@ mkdir -p mono/filtered/tree
 qiime taxa barplot \
   --i-table mono/filtered/table-mono-fltr.qza \
   --i-taxonomy mono/taxonomy/taxonomy.qza \
-  --m-metadata-file 20210510MonocultbiomeSeqMetadata.tsv \
+  --m-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv \
   --o-visualization mono/filtered/taxonomy/taxa-bar-plots.qzv
 
 
@@ -173,7 +173,7 @@ qiime phylogeny align-to-tree-mafft-fasttree \
 qiime empress community-plot \
   --i-tree mono/filtered/tree/rooted-tree.qza \
   --i-feature-table mono/filtered/table-mono-fltr.qza \
-  --m-sample-metadata-file 20210510MonocultbiomeSeqMetadata.tsv \
+  --m-sample-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv \
   --m-feature-metadata-file mono/taxonomy/taxonomy.qza \
   --o-visualization mono/filtered/tree/community-tree.qzv
 
@@ -184,7 +184,7 @@ qiime diversity alpha-rarefaction \
   --i-table mono/filtered/table-mono-fltr.qza \
   --i-phylogeny mono/filtered/tree/rooted-tree.qza \
   --p-max-depth 60000 \
-  --m-metadata-file 20210510MonocultbiomeSeqMetadata.tsv \
+  --m-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv \
   --o-visualization mono/filtered/diversity/alpha-rarefaction.qzv
 
 
@@ -194,7 +194,7 @@ qiime diversity core-metrics-phylogenetic \
   --i-phylogeny mono/filtered/tree/rooted-tree.qza \
   --i-table mono/filtered/table-mono-fltr.qza \
   --p-sampling-depth 6272 \
-  --m-metadata-file 20210510MonocultbiomeSeqMetadata.tsv \
+  --m-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv \
   --output-dir mono/filtered/diversity/core-metrics-results-D6272
 
 ## generalized unifrac (Chen et al. 2012 Bioinformatics)
@@ -228,7 +228,7 @@ qiime diversity beta-rarefaction \
   --i-phylogeny mono/filtered/tree/rooted-tree.qza\
   --p-metric generalized_unifrac \
   --p-clustering-method upgma\
-  --m-metadata-file 20210510MonocultbiomeSeqMetadata.tsv\
+  --m-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv\
   --p-sampling-depth 6272 \
   --o-visualization mono/filtered/diversity/beta-rarefaction/betarar-gunifrac.qzv
 
@@ -237,7 +237,7 @@ qiime diversity beta-rarefaction \
   --i-phylogeny mono/filtered/tree/rooted-tree.qza\
   --p-metric braycurtis \
   --p-clustering-method upgma\
-  --m-metadata-file 20210510MonocultbiomeSeqMetadata.tsv\
+  --m-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv\
   --p-sampling-depth 6272 \
   --o-visualization mono/filtered/diversity/beta-rarefaction/betarar-bray.qzv
 
@@ -246,7 +246,7 @@ qiime diversity beta-rarefaction \
   --i-phylogeny mono/filtered/tree/rooted-tree.qza\
   --p-metric aitchison \
   --p-clustering-method upgma\
-  --m-metadata-file 20210510MonocultbiomeSeqMetadata.tsv\
+  --m-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv\
   --p-sampling-depth 6272 \
   --o-visualization mono/filtered/diversity/beta-rarefaction/betarar-aitchison.qzv
 
@@ -255,7 +255,7 @@ qiime diversity beta-rarefaction \
   --i-phylogeny mono/filtered/tree/rooted-tree.qza\
   --p-metric weighted_unifrac \
   --p-clustering-method upgma\
-  --m-metadata-file 20210510MonocultbiomeSeqMetadata.tsv\
+  --m-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv\
   --p-sampling-depth 6272 \
   --o-visualization mono/filtered/diversity/beta-rarefaction/betarar-wuni.qzv
 
@@ -273,7 +273,7 @@ qiime deicode rpca \
 
 qiime emperor biplot \
   --i-biplot mono/filtered/diversity/deicode/rAitchison-ordination.qza \
-  --m-sample-metadata-file 20210510MonocultbiomeSeqMetadata.tsv \
+  --m-sample-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv \
   --m-feature-metadata-file mono/taxonomy/taxonomy.qza \
   --o-visualization mono/filtered/diversity/deicode/rPCA-biplot.qzv \
   --p-number-of-features 5
@@ -282,7 +282,7 @@ mkdir mono/filtered/diversity/stats
 
 qiime diversity beta-group-significance \
   --i-distance-matrix mono/filtered/diversity/gen-unifrac-D6272/generalized_unifrac_distance_matrix.qza \
-  --m-metadata-file 20210510MonocultbiomeSeqMetadata.tsv\
+  --m-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv\
   --m-metadata-column Genus \
   --p-method permanova \
   --p-pairwise True \
@@ -290,7 +290,7 @@ qiime diversity beta-group-significance \
 
 qiime diversity beta-group-significance \
   --i-distance-matrix mono/filtered/diversity/gen-unifrac-D6272/generalized_unifrac_distance_matrix.qza \
-  --m-metadata-file 20210510MonocultbiomeSeqMetadata.tsv\
+  --m-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv\
   --m-metadata-column Species \
   --p-method permanova \
   --p-pairwise True \
@@ -309,7 +309,7 @@ mkdir mono-grouped
 qiime feature-table group \
   --i-table mono/filtered/table-mono-fltr.qza \
   --p-axis sample \
-  --m-metadata-file 20210510MonocultbiomeSeqMetadata.tsv \
+  --m-metadata-file metadata/20210510MonocultbiomeSeqMetadata.tsv \
   --m-metadata-column "Unique" \
   --p-mode sum \
   --o-grouped-table mono-grouped/table-mono.qza 
@@ -317,7 +317,7 @@ qiime feature-table group \
 qiime feature-table summarize \
   --i-table mono-grouped/table-mono.qza \
   --o-visualization mono-grouped/table-mono.qzv \
-  --m-sample-metadata-file 20210510MonocultbiomeSeqGrouped.tsv
+  --m-sample-metadata-file metadata/20210510MonocultbiomeSeqGrouped.tsv
 
 
 ## copy mono/filtered/rep-seq-mono-fltr.qza and qzv
@@ -334,7 +334,7 @@ cp mono/filtered/tree/* mono-grouped/tree
 qiime empress community-plot \
   --i-tree mono-grouped/tree/rooted-tree.qza \
   --i-feature-table mono-grouped/table-mono.qza \
-  --m-sample-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-sample-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --m-feature-metadata-file mono-grouped/taxonomy/taxonomy.qza \
   --o-visualization mono-grouped/tree/community-tree.qzv
 
@@ -348,7 +348,7 @@ cp mono/taxonomy/taxonomy* mono-grouped/taxonomy
 qiime taxa barplot \
   --i-table mono-grouped/table-mono.qza \
   --i-taxonomy mono-grouped/taxonomy/taxonomy.qza \
-  --m-metadata-file 20210510MonocultbiomeSeqGrouped.tsv \
+  --m-metadata-file metadata/20210510MonocultbiomeSeqGrouped.tsv \
   --o-visualization mono-grouped/taxonomy/taxa-bar-plots.qzv
 
 
@@ -360,7 +360,7 @@ qiime diversity alpha-rarefaction \
   --i-table mono-grouped/table-mono.qza \
   --i-phylogeny mono-grouped/tree/rooted-tree.qza \
   --p-max-depth 100000 \
-  --m-metadata-file 20210510MonocultbiomeSeqGrouped.tsv \
+  --m-metadata-file metadata/20210510MonocultbiomeSeqGrouped.tsv \
   --o-visualization mono-grouped/diversity/alpha-rarefaction.qzv
 
 ## beta diversity core metrics 32260 depth with filtered and grouped sequences
@@ -369,7 +369,7 @@ qiime diversity core-metrics-phylogenetic \
   --i-phylogeny mono-grouped/tree/rooted-tree.qza \
   --i-table mono-grouped/table-mono.qza \
   --p-sampling-depth 32260 \
-  --m-metadata-file 20210510MonocultbiomeSeqGrouped.tsv \
+  --m-metadata-file metadata/20210510MonocultbiomeSeqGrouped.tsv \
   --output-dir mono-grouped/diversity/core-metrics-results-D32260
 
 
@@ -408,7 +408,7 @@ qiime deicode rpca \
 
 qiime emperor biplot \
   --i-biplot mono-grouped/diversity/deicode/rAitchison-ordination.qza \
-  --m-sample-metadata-file 20210510MonocultbiomeSeqGrouped.tsv \
+  --m-sample-metadata-file metadata/20210510MonocultbiomeSeqGrouped.tsv \
   --m-feature-metadata-file mono-grouped/taxonomy/taxonomy.qza \
   --o-visualization mono-grouped/diversity/deicode/rPCA-biplot.qzv \
   --p-number-of-features 5
@@ -425,28 +425,28 @@ mkdir -p mono-grouped/diversity/stats
 
 qiime diversity alpha-group-significance \
   --i-alpha-diversity mono-grouped/diversity/core-metrics-results-D32260/faith_pd_vector.qza \
-  --m-metadata-file 20210510MonocultbiomeSeqGrouped.tsv \
+  --m-metadata-file metadata/20210510MonocultbiomeSeqGrouped.tsv \
   --o-visualization mono-grouped/diversity/stats/faith_group_sign.qzv
 
 ## shannon
 
 qiime diversity alpha-group-significance \
   --i-alpha-diversity mono-grouped/diversity/core-metrics-results-D32260/shannon_vector.qza \
-  --m-metadata-file 20210510MonocultbiomeSeqGrouped.tsv \
+  --m-metadata-file metadata/20210510MonocultbiomeSeqGrouped.tsv \
   --o-visualization mono-grouped/diversity/stats/shannon_group_sign.qzv
 
 ## observed features
 
 qiime diversity alpha-group-significance \
   --i-alpha-diversity mono-grouped/diversity/core-metrics-results-D32260/observed_features_vector.qza \
-  --m-metadata-file 20210510MonocultbiomeSeqGrouped.tsv \
+  --m-metadata-file metadata/20210510MonocultbiomeSeqGrouped.tsv \
   --o-visualization mono-grouped/diversity/stats/observed_featured_group_sign.qzv
 
 ## evenness
 
 qiime diversity alpha-group-significance \
   --i-alpha-diversity mono-grouped/diversity/core-metrics-results-D32260/evenness_vector.qza \
-  --m-metadata-file 20210510MonocultbiomeSeqGrouped.tsv \
+  --m-metadata-file metadata/20210510MonocultbiomeSeqGrouped.tsv \
   --o-visualization mono-grouped/diversity/stats/evenness_group_sign.qzv
 
 
@@ -455,7 +455,7 @@ qiime diversity alpha-group-significance \
 ## bray curtis
 qiime diversity beta-group-significance \
   --i-distance-matrix mono-grouped/diversity/core-metrics-results-D32260/bray_curtis_distance_matrix.qza \
-  --m-metadata-file 20210510MonocultbiomeSeqGrouped.tsv\
+  --m-metadata-file metadata/20210510MonocultbiomeSeqGrouped.tsv\
   --m-metadata-column TurtleID \
   --p-method permanova \
   --p-pairwise True \
@@ -465,7 +465,7 @@ qiime diversity beta-group-significance \
 
 qiime diversity beta-group-significance \
   --i-distance-matrix mono-grouped/diversity/core-metrics-results-D32260/weighted_unifrac_distance_matrix.qza \
-  --m-metadata-file 20210510MonocultbiomeSeqGrouped.tsv\
+  --m-metadata-file metadata/20210510MonocultbiomeSeqGrouped.tsv\
   --m-metadata-column TurtleID \
   --p-method permanova \
   --p-pairwise True \
@@ -476,7 +476,7 @@ qiime diversity beta-group-significance \
 
 qiime diversity beta-group-significance \
   --i-distance-matrix mono-grouped/diversity/deicode/rAitchison-distance.qza \
-  --m-metadata-file 20210510MonocultbiomeSeqGrouped.tsv\
+  --m-metadata-file metadata/20210510MonocultbiomeSeqGrouped.tsv\
   --m-metadata-column TurtleID \
   --p-method permanova \
   --p-pairwise True \
@@ -487,7 +487,7 @@ qiime diversity beta-group-significance \
 
 qiime diversity beta-group-significance \
   --i-distance-matrix mono-grouped/diversity/gen-unifrac-D32260/generalized_unifrac_distance_matrix.qza \
-  --m-metadata-file 20210510MonocultbiomeSeqGrouped.tsv\
+  --m-metadata-file metadata/20210510MonocultbiomeSeqGrouped.tsv\
   --m-metadata-column TurtleID \
   --p-method permanova \
   --p-pairwise True \
@@ -573,12 +573,12 @@ qiime metadata tabulate \
 qiime feature-table summarize \
   --i-table source/data1/demux-dada2/table-source1.qza \
   --o-visualization source/data1/demux-dada2/table-source1.qzv \
-  --m-sample-metadata-file 20210512MonocultbiomeSeqAndSource.tsv
+  --m-sample-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv
 
 qiime feature-table summarize \
   --i-table source/data2/demux-dada2/table-source2.qza \
   --o-visualization source/data2/demux-dada2/table-source2.qzv \
-  --m-sample-metadata-file 20210512MonocultbiomeSeqAndSource.tsv
+  --m-sample-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv
 
 qiime feature-table tabulate-seqs \
   --i-data source/data1/demux-dada2/rep-seqs-source1.qza \
@@ -609,7 +609,7 @@ qiime feature-table merge-seqs \
 qiime feature-table summarize \
   --i-table source/data-merged/table-source.qza \
   --o-visualization source/data-merged/table-source.qzv \
-  --m-sample-metadata-file 20210512MonocultbiomeSeqAndSource.tsv
+  --m-sample-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv
 
 qiime feature-table tabulate-seqs \
   --i-data source/data-merged/rep-seqs-source.qza \
@@ -635,7 +635,7 @@ qiime metadata tabulate \
 qiime taxa barplot \
   --i-table source/data-merged/table-source.qza \
   --i-taxonomy source/taxonomy/taxonomy-source.qza \
-  --m-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --o-visualization source/taxonomy/taxa-bar-plots.qzv
 
 
@@ -656,7 +656,7 @@ qiime phylogeny align-to-tree-mafft-fasttree \
 qiime empress community-plot \
   --i-tree source/tree/rooted-tree.qza \
   --i-feature-table source/data-merged/table-source.qza \
-  --m-sample-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-sample-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --m-feature-metadata-file source/taxonomy/taxonomy-source.qza \
   --o-visualization source/tree/community-tree.qzv
 
@@ -685,7 +685,7 @@ qiime taxa filter-seqs \
 qiime feature-table summarize \
   --i-table source/filtered/table-source-fltr.qza \
   --o-visualization source/filtered/table-source-fltr.qzv \
-  --m-sample-metadata-file 20210512MonocultbiomeSeqAndSource.tsv
+  --m-sample-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv
 
 qiime feature-table tabulate-seqs \
   --i-data source/filtered/rep-seqs-source-fltr.qza \
@@ -711,7 +711,7 @@ qiime phylogeny align-to-tree-mafft-fasttree \
 qiime empress community-plot \
   --i-tree source/filtered/tree/rooted-tree.qza \
   --i-feature-table source/filtered/table-source-fltr.qza \
-  --m-sample-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-sample-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --m-feature-metadata-file source/taxonomy/taxonomy-source.qza \
   --o-visualization source/filtered/tree/community-tree.qzv
 
@@ -721,7 +721,7 @@ qiime empress community-plot \
 qiime taxa barplot \
   --i-table source/filtered/table-source-fltr.qza \
   --i-taxonomy source/taxonomy/taxonomy-source.qza \
-  --m-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --o-visualization source/filtered/taxonomy/taxa-bar-plots.qzv
 
 
@@ -736,7 +736,7 @@ qiime diversity alpha-rarefaction \
   --i-table source/filtered/table-source-fltr.qza \
   --i-phylogeny source/filtered/tree/rooted-tree.qza \
   --p-max-depth 100000 \
-  --m-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --o-visualization source/filtered/diversity/alpha-rarefaction.qzv
 
 
@@ -746,7 +746,7 @@ qiime diversity core-metrics-phylogenetic \
   --i-phylogeny source/filtered/tree/rooted-tree.qza \
   --i-table source/filtered/table-source-fltr.qza \
   --p-sampling-depth 54000 \
-  --m-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --output-dir source/filtered/diversity/core-metrics-results-D54000
 
 
@@ -772,7 +772,7 @@ qiime feature-table merge-seqs \
 qiime feature-table summarize \
   --i-table mono-source/table.qza \
   --o-visualization mono-source/table.qzv \
-  --m-sample-metadata-file 20210512MonocultbiomeSeqAndSource.tsv
+  --m-sample-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv
 
 qiime feature-table tabulate-seqs \
   --i-data mono-source/rep-seqs.qza \
@@ -788,7 +788,7 @@ qiime feature-table merge-taxa \
 qiime taxa barplot \
   --i-table mono-source/table.qza \
   --i-taxonomy mono-source/taxonomy/taxonomy.qza \
-  --m-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --o-visualization mono-source/taxonomy/taxa-bar-plots.qzv
 
 
@@ -809,7 +809,7 @@ qiime phylogeny align-to-tree-mafft-fasttree \
 qiime empress community-plot \
   --i-tree mono-source/tree/rooted-tree.qza \
   --i-feature-table mono-source/table.qza \
-  --m-sample-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-sample-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --m-feature-metadata-file mono-source/taxonomy/taxonomy.qza \
   --o-visualization mono-source/tree/community-tree.qzv
 
@@ -824,7 +824,7 @@ qiime diversity core-metrics-phylogenetic \
   --i-phylogeny mono-source/tree/rooted-tree.qza \
   --i-table mono-source/table.qza \
   --p-sampling-depth 32260 \
-  --m-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --output-dir mono-source/diversity/core-metrics-results-D32260
 
 
@@ -861,7 +861,7 @@ qiime deicode rpca \
 
 qiime emperor biplot \
   --i-biplot mono-source/diversity/deicode/rAitchison-ordination.qza \
-  --m-sample-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-sample-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --m-feature-metadata-file mono-source/taxonomy/taxonomy.qza \
   --o-visualization mono-source/diversity/deicode/rPCA-biplot.qzv \
   --p-number-of-features 5
@@ -874,7 +874,7 @@ qiime diversity beta-rarefaction \
   --i-phylogeny mono-source/tree/rooted-tree.qza\
   --p-metric generalized_unifrac \
   --p-clustering-method upgma\
-  --m-metadata-file 20210512MonocultbiomeSeqAndSource.tsv\
+  --m-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv\
   --p-sampling-depth 32260 \
   --o-visualization mono-source/diversity/beta-rarefaction/betarar-guni.qzv
 
@@ -883,7 +883,7 @@ qiime diversity beta-rarefaction \
   --i-phylogeny mono-source/tree/rooted-tree.qza\
   --p-metric weighted_unifrac \
   --p-clustering-method upgma\
-  --m-metadata-file 20210512MonocultbiomeSeqAndSource.tsv\
+  --m-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv\
   --p-sampling-depth 32260 \
   --o-visualization mono-source/diversity/beta-rarefaction/betarar-wuni.qzv
 
@@ -892,7 +892,7 @@ qiime diversity beta-rarefaction \
   --i-phylogeny mono-source/tree/rooted-tree.qza\
   --p-metric aitchison \
   --p-clustering-method upgma\
-  --m-metadata-file 20210512MonocultbiomeSeqAndSource.tsv\
+  --m-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv\
   --p-sampling-depth 32260 \
   --o-visualization mono-source/diversity/beta-rarefaction/betarar-aitchison.qzv
 
@@ -903,28 +903,28 @@ mkdir mono-source/diversity/stats
 
 qiime diversity adonis \
   --i-distance-matrix mono-source/diversity/core-metrics-results-D32260/weighted_unifrac_distance_matrix.qza \
-  --m-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --p-formula "Genus" \
   --p-n-jobs 2 \
   --o-visualization mono-source/diversity/stats/weighted_unifrac_adonis_genus.qzv
 
 qiime diversity adonis \
   --i-distance-matrix mono-source/diversity/core-metrics-results-D32260/weighted_unifrac_distance_matrix.qza \
-  --m-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --p-formula "Genus+TurtleID" \
   --p-n-jobs 2 \
   --o-visualization mono-source/diversity/stats/weighted_unifrac_adonis_genus-turtle.qzv
 
 qiime diversity adonis \
   --i-distance-matrix mono-source/diversity/core-metrics-results-D32260/weighted_unifrac_distance_matrix.qza \
-  --m-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --p-formula "Species+SourceID" \
   --p-n-jobs 2 \
   --o-visualization mono-source/diversity/stats/weighted_unifrac_adonis_species-source.qzv
 
 qiime diversity adonis \
   --i-distance-matrix mono-source/diversity/core-metrics-results-D32260/weighted_unifrac_distance_matrix.qza \
-  --m-metadata-file 20210512MonocultbiomeSeqAndSource.tsv \
+  --m-metadata-file metadata/20210512MonocultbiomeSeqAndSource.tsv \
   --p-formula "Species" \
   --p-n-jobs 2 \
   --o-visualization mono-source/diversity/stats/weighted_unifrac_adonis_species.qzv
@@ -1007,7 +1007,7 @@ rm table*.qza
 
 mkdir -p core-features/mono-vs-source
 
-cp 20210512MonocultbiomeSeqAndSource.tsv core-features/mono-vs-source/
+cp metadata/20210512MonocultbiomeSeqAndSource.tsv core-features/mono-vs-source/
 
 cp core-features/collapsed_tables/table-lvl*.qza core-features/mono-vs-source
 
@@ -1030,7 +1030,7 @@ cd ../..
 
 mkdir -p core-features/epizoic-vs-non
 
-cp 20210512MonocultbiomeSeqAndSource.tsv core-features/epizoic-vs-non/ 
+cp metadata/20210512MonocultbiomeSeqAndSource.tsv core-features/epizoic-vs-non/ 
 
 cp core-features/collapsed_tables/table-lvl*.qza core-features/epizoic-vs-non
 
@@ -1051,7 +1051,7 @@ for file in non_epizoic-table-lvl*.qza; do qiime feature-table core-features --i
 
 mkdir -p core-features/achnanthes
 
-cp 20210512MonocultbiomeSeqAndSource.tsv core-features/achnanthes/
+cp metadata/20210512MonocultbiomeSeqAndSource.tsv core-features/achnanthes/
 
 cp core-features/collapsed_tables/table-lvl*.qza core-features/achnanthes
 
