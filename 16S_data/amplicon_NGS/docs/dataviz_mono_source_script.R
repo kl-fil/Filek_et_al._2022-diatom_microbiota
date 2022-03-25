@@ -738,6 +738,8 @@ p_dendro_combination <- p_dendro_combination +
 
 ##---- Import taxonomy and counts (extracted from qiime2 barplots) ----
 
+# generate csv files with abundances from mono-source/taxonomy/taxa-bar-plots.qzv 
+# save each level as csv in the mono-source/taxonomy folder
 # import csv files taxa as columns, samples as rows
 data_2_ms <- read.csv("mono-source/taxonomy/level-2.csv", row.names = 1) #row names as sample id
 data_3_ms <- read.csv("mono-source/taxonomy/level-3.csv", row.names = 1) 
