@@ -9,7 +9,7 @@
 # - diatom monoclonal cultures: PRJEB47668 (ERP131963)
 # - source samples: PRJEB51458 (ERP136087), specifically samples ERS10917091,
 # ERS10917092, ERS10917093, ERS10917103, ERS10917104, ERS10917111
-# Mendeley data DOI: ##TBD##
+# Mendeley data DOI: 10.17632/4r6568xcpw.1
 #----------------------------------------------------------------------------
 
 ##----- QIIME2 environment activation in Conda ------------------------------
