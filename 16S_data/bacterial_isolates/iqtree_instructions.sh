@@ -13,5 +13,5 @@ conda install -c bioconda iqtree
 
 ## use ultrafast bootstrap -bb 1000
 
-iqtree -s all_seq_muscle_aligned_aliview.fas -m MFP -bb 1000 -nt AUTO
+iqtree -s bacterial_isolates_full_16S_aligned_muscle.fas -m MFP -bb 1000 -nt AUTO
 
