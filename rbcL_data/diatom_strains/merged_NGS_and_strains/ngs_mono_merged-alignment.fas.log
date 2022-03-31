@@ -1,0 +1,1033 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Mac OS X 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    Klaras-MacBook-Pro.local (AVX2, FMA3, 16 GB RAM)
+Command: iqtree -s ngs_mono_merged-alignment.fas -m MFP -bb 1000 -nt AUTO
+Seed:    297516 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Dec  2 13:42:31 2021
+Kernel:  AVX+FMA - auto-detect threads (12 CPU cores detected)
+
+Reading alignment file ngs_mono_merged-alignment.fas ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 636 sequences with 291 columns, 216 distinct patterns
+191 parsimony-informative, 15 singleton sites, 85 constant sites
+                                               Gap/Ambiguity  Composition  p-value
+   1  ASV343|Achnanthes|96.0                           9.62%    passed     86.67%
+   2  ASV362|Achnanthes|93.8                           9.62%    passed     91.92%
+   3  ASV481|Achnanthes|70.9                           9.62%    passed     88.64%
+   4  ASV498|Craspedostauros|100.0                     9.62%    passed     84.62%
+   5  ASV287|Achnanthidium|97.0                        9.62%    passed     93.43%
+   6  ASV63|Achnanthidium|99.1                         9.62%    passed     83.12%
+   7  ASV379|Cocconeis|95.4                            9.62%    passed     97.22%
+   8  ASV551|Cocconeis|71.4                            9.62%    passed     72.27%
+   9  ASV242|Cocconeis|99.6                            9.62%    passed     98.44%
+  10  ASV479|Cocconeis|100.0                           9.62%    passed     97.13%
+  11  ASV132|order_Achnanthales|91.9                   9.62%    passed     85.23%
+  12  ASV174|order_Achnanthales|76.3                   9.62%    passed     97.10%
+  13  ASV283|order_Achnanthales|98.4                   9.62%    passed     44.49%
+  14  ASV177|Bacillaria|100.0                          9.62%    passed     87.16%
+  15  ASV334|Cylindrotheca|100.0                       9.62%    passed     59.68%
+  16  ASV388|Cylindrotheca|91.6                        9.62%    passed     66.91%
+  17  ASV425|Cylindrotheca|100.0                       9.62%    passed     96.58%
+  18  ASV426|Cylindrotheca|100.0                       9.62%    passed     90.50%
+  19  ASV444|Cylindrotheca|99.9                        9.62%    passed     75.07%
+  20  ASV445|Cylindrotheca|100.0                       9.62%    passed     88.26%
+  21  ASV447|Cylindrotheca|99.4                        9.62%    passed     71.22%
+  22  ASV489|Cylindrotheca|95.9                        9.62%    passed     94.55%
+  23  ASV491|Cylindrotheca|100.0                       9.62%    passed     83.41%
+  24  ASV518|Cylindrotheca|100.0                       9.62%    passed     94.31%
+  25  ASV519|Cylindrotheca|100.0                       9.62%    passed     84.90%
+  26  ASV520|Cylindrotheca|100.0                       9.62%    passed     96.78%
+  27  ASV521|Cylindrotheca|100.0                       9.62%    passed     84.90%
+  28  ASV597|Cylindrotheca|99.4                        9.62%    passed     92.05%
+  29  ASV617|Cylindrotheca|100.0                       9.62%    passed     95.45%
+  30  ASV389|Nitzschia|99.7                            9.62%    passed     97.61%
+  31  ASV584|Nitzschia|100.0                           9.62%    passed     99.86%
+  32  ASV423|Nitzschia|91.2                            9.62%    passed     99.85%
+  33  ASV497|Nitzschia|75.4                            9.62%    passed     80.54%
+  34  ASV372|Nitzschia|73.5                            9.62%    passed     86.66%
+  35  ASV373|Nitzschia|97.3                            9.62%    passed     90.09%
+  36  ASV374|Nitzschia|97.0                            9.62%    passed     91.78%
+  37  ASV398|Nitzschia|100.0                           9.62%    passed     94.02%
+  38  ASV399|Nitzschia|99.9                            9.62%    passed     96.60%
+  39  ASV400|Nitzschia|99.9                            9.62%    passed     92.05%
+  40  ASV401|Nitzschia|99.9                            9.62%    passed     87.50%
+  41  ASV418|Nitzschia|99.2                            9.62%    passed     99.95%
+  42  ASV419|Nitzschia|99.9                            9.62%    passed     99.19%
+  43  ASV420|Nitzschia|100.0                           9.62%    passed     97.34%
+  44  ASV421|Nitzschia|100.0                           9.62%    passed     98.76%
+  45  ASV446|Nitzschia|86.2                            9.62%    passed     90.75%
+  46  ASV493|Nitzschia|99.4                            9.62%    passed     95.71%
+  47  ASV598|Nitzschia|99.8                            9.62%    passed     90.80%
+  48  ASV599|Nitzschia|100.0                           9.62%    passed     79.01%
+  49  ASV600|Nitzschia|100.0                           9.62%    passed     87.57%
+  50  ASV601|Nitzschia|100.0                           9.62%    passed     89.35%
+  51  ASV606|Nitzschia|99.9                            9.62%    passed     99.32%
+  52  ASV404|Nitzschia|100.0                           9.62%    passed     66.15%
+  53  ASV393|Nitzschia|83.8                            9.62%    passed     93.38%
+  54  ASV395|Nitzschia|85.1                            9.62%    passed     95.84%
+  55  ASV396|Nitzschia|84.7                            9.62%    passed     92.48%
+  56  ASV60|Nitzschia|95.3                             9.62%    passed     86.91%
+  57  ASV178|Nitzschia|80.8                            9.62%    passed     94.94%
+  58  ASV179|Nitzschia|86.8                            9.62%    passed     92.57%
+  59  ASV205|Nitzschia|80.3                            9.62%    passed     97.64%
+  60  ASV211|Nitzschia|87.6                            9.62%    passed     70.34%
+  61  ASV251|Nitzschia|78.0                            9.62%    passed     92.08%
+  62  ASV278|Nitzschia|71.4                            9.62%    passed     87.03%
+  63  ASV337|Nitzschia|96.6                            9.62%    passed     99.55%
+  64  ASV346|Nitzschia|86.4                            9.62%    passed     42.27%
+  65  ASV356|Nitzschia|99.9                            9.62%    passed     98.15%
+  66  ASV360|Nitzschia|99.9                            9.62%    passed     98.11%
+  67  ASV376|Nitzschia|99.6                            9.62%    passed     94.06%
+  68  ASV377|Nitzschia|99.7                            9.62%    passed     96.11%
+  69  ASV380|Nitzschia|86.6                            9.62%    passed     95.90%
+  70  ASV382|Nitzschia|76.8                            9.62%    passed     83.93%
+  71  ASV385|Nitzschia|99.4                            9.62%    passed     96.97%
+  72  ASV386|Nitzschia|98.9                            9.62%    passed     75.82%
+  73  ASV387|Nitzschia|73.7                            9.62%    passed     94.55%
+  74  ASV391|Nitzschia|83.6                            9.62%    passed     94.15%
+  75  ASV397|Nitzschia|98.3                            9.62%    passed     84.90%
+  76  ASV402|Nitzschia|81.5                            9.62%    passed     98.84%
+  77  ASV408|Nitzschia|88.4                            9.62%    passed     96.66%
+  78  ASV409|Nitzschia|76.0                            9.62%    passed     89.45%
+  79  ASV427|Nitzschia|98.9                            9.62%    passed     77.07%
+  80  ASV428|Nitzschia|79.6                            2.75%    passed     72.60%
+  81  ASV429|Nitzschia|99.3                            9.62%    passed     98.11%
+  82  ASV430|Nitzschia|98.9                            9.62%    passed     99.19%
+  83  ASV431|Nitzschia|92.6                            9.62%    passed     74.08%
+  84  ASV433|Nitzschia|94.5                            9.62%    passed     83.28%
+  85  ASV434|Nitzschia|92.8                            9.62%    passed     97.17%
+  86  ASV437|Nitzschia|99.9                            9.62%    passed     90.59%
+  87  ASV438|Nitzschia|99.4                            9.62%    passed     96.86%
+  88  ASV439|Nitzschia|100.0                           9.62%    passed     92.05%
+  89  ASV440|Nitzschia|97.3                            9.62%    passed     89.65%
+  90  ASV450|Nitzschia|84.1                            9.62%    passed     79.42%
+  91  ASV456|Nitzschia|99.0                            9.62%    passed     93.00%
+  92  ASV488|Nitzschia|88.7                            9.62%    passed     97.66%
+  93  ASV492|Nitzschia|96.1                            9.62%    passed     95.70%
+  94  ASV500|Nitzschia|83.9                            9.62%    passed     39.83%
+  95  ASV517|Nitzschia|97.3                            9.62%    passed     89.37%
+  96  ASV522|Nitzschia|75.8                            9.62%    passed     91.51%
+  97  ASV523|Nitzschia|100.0                           9.62%    passed     99.03%
+  98  ASV524|Nitzschia|100.0                           9.62%    passed     96.86%
+  99  ASV543|Nitzschia|83.6                            9.62%    passed     64.95%
+ 100  ASV555|Nitzschia|88.2                            9.62%    passed     65.19%
+ 101  ASV585|Nitzschia|98.5                            9.62%    passed     83.37%
+ 102  ASV593|Nitzschia|93.2                            9.62%    passed     97.61%
+ 103  ASV603|Nitzschia|89.0                            9.62%    passed     71.78%
+ 104  ASV605|Nitzschia|93.8                            9.62%    passed     90.40%
+ 105  ASV607|Nitzschia|99.6                            9.62%    passed     91.11%
+ 106  ASV608|Nitzschia|98.2                            9.62%    passed     74.61%
+ 107  ASV615|Nitzschia|78.3                            9.62%    passed     69.15%
+ 108  ASV189|Nitzschia|100.0                           9.62%    passed     88.38%
+ 109  ASV195|Nitzschia|99.9                            9.62%    passed     94.27%
+ 110  ASV196|Nitzschia|100.0                           9.62%    passed     95.43%
+ 111  ASV197|Nitzschia|99.9                            9.62%    passed     97.84%
+ 112  ASV198|Nitzschia|96.3                            9.62%    passed     98.51%
+ 113  ASV199|Nitzschia|99.9                            9.62%    passed     93.17%
+ 114  ASV200|Nitzschia|100.0                           9.62%    passed     89.06%
+ 115  ASV202|Nitzschia|100.0                           9.62%    passed     93.17%
+ 116  ASV204|Nitzschia|100.0                           9.62%    passed     94.27%
+ 117  ASV284|Nitzschia|99.4                            9.62%    passed     96.13%
+ 118  ASV548|Nitzschia|100.0                           9.62%    passed     87.63%
+ 119  ASV165|Nitzschia|99.1                            9.62%    passed     68.72%
+ 120  ASV53|Nitzschia|86.0                             9.62%    passed     87.10%
+ 121  ASV55|Nitzschia|82.3                             9.62%    passed     87.38%
+ 122  ASV190|Nitzschia|100.0                           9.62%    passed     87.75%
+ 123  ASV54|Nitzschia|100.0                            2.75%    passed     97.96%
+ 124  ASV328|Nitzschia|81.3                            9.62%    passed     64.54%
+ 125  ASV371|Nitzschia|99.9                            9.62%    passed     86.66%
+ 126  ASV394|Nitzschia|98.2                            9.62%    passed     98.76%
+ 127  ASV406|Nitzschia|93.8                            9.62%    passed     98.52%
+ 128  ASV413|Nitzschia|99.9                            9.62%    passed     94.10%
+ 129  ASV417|Nitzschia|98.6                            9.62%    passed     75.51%
+ 130  ASV432|Nitzschia|100.0                           2.75%    passed     80.32%
+ 131  ASV435|Nitzschia|100.0                           2.75%    passed     81.56%
+ 132  ASV436|Nitzschia|100.0                           9.62%    passed     77.08%
+ 133  ASV442|Nitzschia|79.4                            9.62%    passed     91.85%
+ 134  ASV366|Psammodictyon|77.4                        9.62%    passed     90.69%
+ 135  ASV370|Psammodictyon|80.8                        9.62%    passed     93.39%
+ 136  ASV365|Psammodictyon|100.0                       9.62%    passed     85.89%
+ 137  ASV367|Psammodictyon|100.0                       9.62%    passed     86.26%
+ 138  ASV368|Psammodictyon|100.0                       9.62%    passed     78.06%
+ 139  ASV369|Psammodictyon|100.0                       9.62%    passed     92.27%
+ 140  ASV410|Pseudo-nitzschia|100.0                    9.62%    passed     82.93%
+ 141  ASV338|Tryblionella|80.0                         9.62%    passed     92.42%
+ 142  ASV595|Tryblionella|99.6                         9.62%    passed     85.86%
+ 143  ASV596|Tryblionella|100.0                        9.62%    passed     91.64%
+ 144  ASV441|Tryblionella|99.9                         9.62%    passed     76.95%
+ 145  ASV363|family_Bacillariaceae|100.0               2.75%    passed     96.38%
+ 146  ASV364|family_Bacillariaceae|100.0               9.62%    passed     87.70%
+ 147  ASV384|family_Bacillariaceae|71.8                9.62%    passed     84.50%
+ 148  ASV452|family_Bacillariaceae|96.8                9.62%    passed     87.36%
+ 149  ASV604|family_Bacillariaceae|70.3                9.62%    passed     69.31%
+ 150  ASV118|family_Cymbellaceae|89.6                  9.62%    passed     99.66%
+ 151  ASV96|Lyrella|100.0                              9.62%    passed     65.19%
+ 152  ASV97|Lyrella|99.9                               9.62%    passed     91.80%
+ 153  ASV259|Lyrella|99.9                              9.62%    passed     67.28%
+ 154  ASV532|Mastogloia|99.6                           9.62%    passed     88.30%
+ 155  ASV478|family_Mastogloiaceae|71.1                9.62%    passed     94.99%
+ 156  ASV82|Berkeleya|100.0                            9.62%    passed     94.65%
+ 157  ASV83|Berkeleya|99.9                             9.62%    passed     97.74%
+ 158  ASV260|Climaconeis|100.0                         9.62%    passed     42.63%
+ 159  ASV546|Climaconeis|97.9                          9.62%    passed     42.41%
+ 160  ASV547|Climaconeis|96.3                          9.62%    passed     39.99%
+ 161  ASV98|Parlibellus|82.5                           9.62%    passed     73.75%
+ 162  ASV154|Diploneis|99.0                            9.62%    passed     95.25%
+ 163  ASV148|Diploneis|99.8                            9.62%    passed     86.31%
+ 164  ASV149|Diploneis|71.4                            9.62%    passed     99.53%
+ 165  ASV155|Diploneis|97.0                            9.62%    passed     37.50%
+ 166  ASV158|Diploneis|88.1                            9.62%    passed     96.75%
+ 167  ASV159|Diploneis|95.9                            9.62%    passed     98.76%
+ 168  ASV540|Diploneis|75.1                            9.62%    passed     99.53%
+ 169  ASV541|Diploneis|89.3                            9.62%    passed     99.03%
+ 170  ASV101|Diploneis|89.6                            9.62%    passed     94.07%
+ 171  ASV150|Diploneis|72.9                            9.62%    passed     93.80%
+ 172  ASV156|Diploneis|79.9                            9.62%    passed     95.67%
+ 173  ASV157|Diploneis|97.0                            9.62%    passed     99.14%
+ 174  ASV539|Diploneis|79.6                            9.62%    passed     96.99%
+ 175  ASV100|Diploneis|100.0                           9.62%    passed     94.84%
+ 176  ASV147|Diploneis|96.6                            9.62%    passed     95.33%
+ 177  ASV151|Diploneis|100.0                          17.53%    passed     84.72%
+ 178  ASV152|Diploneis|100.0                           9.62%    passed     76.07%
+ 179  ASV153|Diploneis|100.0                           2.75%    passed     65.54%
+ 180  ASV29|Haslea|86.7                                9.62%    passed     91.33%
+ 181  ASV33|Haslea|79.2                                9.62%    passed     84.95%
+ 182  ASV219|Haslea|72.9                               9.62%    passed     91.99%
+ 183  ASV6|Navicula|89.9                               9.62%    passed     94.59%
+ 184  ASV16|Navicula|95.9                              9.62%    passed     89.69%
+ 185  ASV21|Navicula|82.5                              9.62%    passed     92.14%
+ 186  ASV22|Navicula|96.1                              9.62%    passed     96.58%
+ 187  ASV25|Navicula|99.9                              9.62%    passed     96.79%
+ 188  ASV39|Navicula|75.9                              9.62%    passed     92.92%
+ 189  ASV162|Navicula|82.6                             2.75%    passed     95.38%
+ 190  ASV163|Navicula|81.8                             2.75%    passed     91.69%
+ 191  ASV214|Navicula|80.8                             9.62%    passed     96.54%
+ 192  ASV327|Navicula|87.6                             9.62%    passed     88.64%
+ 193  ASV464|Navicula|85.4                             9.62%    passed     77.66%
+ 194  ASV516|Navicula|83.9                             9.62%    passed     99.53%
+ 195  ASV1|Navicula|94.9                               9.62%    passed     92.42%
+ 196  ASV3|Navicula|97.2                               9.62%    passed     89.12%
+ 197  ASV4|Navicula|73.4                               9.62%    passed     89.12%
+ 198  ASV7|Navicula|76.3                               9.62%    passed     89.69%
+ 199  ASV9|Navicula|72.4                               9.62%    passed     62.38%
+ 200  ASV10|Navicula|94.1                              9.62%    passed     78.96%
+ 201  ASV13|Navicula|86.9                              9.62%    passed     95.45%
+ 202  ASV14|Navicula|97.1                              9.62%    passed     90.27%
+ 203  ASV15|Navicula|70.2                              9.62%    passed     96.13%
+ 204  ASV17|Navicula|92.7                              9.62%    passed     76.97%
+ 205  ASV18|Navicula|97.4                              9.62%    passed     92.14%
+ 206  ASV24|Navicula|77.0                              9.62%    passed     82.68%
+ 207  ASV26|Navicula|97.5                              9.62%    passed     96.58%
+ 208  ASV27|Navicula|78.8                              9.62%    passed     91.33%
+ 209  ASV30|Navicula|99.3                              9.62%    passed     75.81%
+ 210  ASV36|Navicula|96.0                              9.62%    passed     96.58%
+ 211  ASV37|Navicula|88.5                              9.62%    passed     86.91%
+ 212  ASV38|Navicula|88.4                              9.62%    passed     99.65%
+ 213  ASV40|Navicula|99.6                              9.62%    passed     90.27%
+ 214  ASV41|Navicula|94.6                              9.62%    passed     93.79%
+ 215  ASV42|Navicula|97.9                              9.62%    passed     86.98%
+ 216  ASV80|Navicula|96.9                              9.62%    passed     99.25%
+ 217  ASV208|Navicula|91.2                             9.62%    passed     97.84%
+ 218  ASV218|Navicula|85.8                             9.62%    passed     96.13%
+ 219  ASV224|Navicula|90.5                             9.62%    passed     85.42%
+ 220  ASV228|Navicula|97.4                             9.62%    passed     91.51%
+ 221  ASV232|Navicula|99.5                             9.62%    passed     97.76%
+ 222  ASV233|Navicula|82.5                             9.62%    passed     98.65%
+ 223  ASV235|Navicula|98.4                             9.62%    passed     99.67%
+ 224  ASV357|Navicula|99.4                             9.62%    passed     87.75%
+ 225  ASV358|Navicula|98.6                             9.62%    passed     69.51%
+ 226  ASV359|Navicula|99.0                             9.62%    passed     78.96%
+ 227  ASV443|Navicula|97.2                             9.62%    passed     87.75%
+ 228  ASV448|Navicula|99.6                             9.62%    passed     82.44%
+ 229  ASV449|Navicula|99.6                             9.62%    passed     82.30%
+ 230  ASV451|Navicula|86.2                             9.62%    passed     85.53%
+ 231  ASV454|Navicula|97.4                             9.62%    passed     60.79%
+ 232  ASV455|Navicula|96.6                             9.62%    passed     79.30%
+ 233  ASV461|Navicula|83.3                             9.62%    passed     97.03%
+ 234  ASV462|Navicula|99.7                             9.62%    passed     96.70%
+ 235  ASV466|Navicula|99.1                             9.62%    passed     93.39%
+ 236  ASV468|Navicula|88.6                             9.62%    passed     98.79%
+ 237  ASV469|Navicula|98.4                             9.62%    passed     98.65%
+ 238  ASV470|Navicula|74.9                             9.62%    passed     92.50%
+ 239  ASV471|Navicula|99.9                             9.62%    passed     96.06%
+ 240  ASV483|Navicula|84.2                             9.62%    passed     76.55%
+ 241  ASV5|Navicula|94.2                               2.75%    passed     93.28%
+ 242  ASV8|Navicula|98.7                               9.62%    passed     97.32%
+ 243  ASV19|Navicula|96.8                              9.62%    passed     73.55%
+ 244  ASV20|Navicula|97.3                              9.62%    passed     76.97%
+ 245  ASV34|Navicula|70.7                              9.62%    passed     96.13%
+ 246  ASV35|Navicula|88.9                              9.62%    passed     98.64%
+ 247  ASV216|Navicula|94.9                             9.62%    passed     99.50%
+ 248  ASV239|Navicula|96.7                             9.62%    passed     98.81%
+ 249  ASV457|Navicula|98.3                             9.62%    passed     96.05%
+ 250  ASV458|Navicula|84.9                             9.62%    passed     99.85%
+ 251  ASV465|Navicula|97.5                             9.62%    passed     98.51%
+ 252  ASV475|Navicula|84.0                             9.62%    passed     75.80%
+ 253  ASV550|Navicula|71.7                             9.62%    passed     94.30%
+ 254  ASV221|Seminavis|90.5                            9.62%    passed     50.99%
+ 255  ASV222|Seminavis|95.9                            9.62%    passed     52.53%
+ 256  ASV223|Seminavis|100.0                           9.62%    passed     84.98%
+ 257  ASV225|Seminavis|77.6                            9.62%    passed     84.98%
+ 258  ASV2|family_Naviculaceae|98.5                    9.62%    passed     72.60%
+ 259  ASV11|family_Naviculaceae|100.0                  9.62%    passed     82.93%
+ 260  ASV12|family_Naviculaceae|100.0                  9.62%    passed     90.27%
+ 261  ASV23|family_Naviculaceae|100.0                  9.62%    passed     82.93%
+ 262  ASV28|family_Naviculaceae|100.0                  9.62%    passed     84.65%
+ 263  ASV31|family_Naviculaceae|98.1                   9.62%    passed     79.00%
+ 264  ASV32|family_Naviculaceae|99.9                   9.62%    passed     91.61%
+ 265  ASV43|family_Naviculaceae|100.0                  9.62%    passed     86.91%
+ 266  ASV164|family_Naviculaceae|100.0                 9.62%    passed     96.58%
+ 267  ASV226|family_Naviculaceae|99.7                  9.62%    passed     61.44%
+ 268  ASV227|family_Naviculaceae|99.9                  9.62%    passed     63.18%
+ 269  ASV229|family_Naviculaceae|81.1                  9.62%    passed     95.73%
+ 270  ASV240|family_Naviculaceae|90.9                  9.62%    passed     97.76%
+ 271  ASV375|family_Naviculaceae|99.9                  9.62%    passed     84.96%
+ 272  ASV378|family_Naviculaceae|100.0                 9.62%    passed     93.79%
+ 273  ASV107|Caloneis|99.8                             9.62%    passed     81.72%
+ 274  ASV58|Pinnularia|92.7                            9.62%    passed     39.87%
+ 275  ASV85|Gyrosigma|79.0                             9.62%    passed     76.39%
+ 276  ASV78|Pleurosigma|82.4                           9.62%    passed     95.85%
+ 277  ASV234|Pleurosigma|100.0                         9.62%    passed     98.81%
+ 278  ASV236|Pleurosigma|99.9                          9.62%    passed     99.46%
+ 279  ASV237|Pleurosigma|97.6                          9.62%    passed     98.87%
+ 280  ASV263|Pleurosigma|98.8                          9.62%    passed     96.11%
+ 281  ASV460|Pleurosigma|99.9                          9.62%    passed     91.53%
+ 282  ASV463|Pleurosigma|99.7                          9.62%    passed     96.82%
+ 283  ASV473|Pleurosigma|99.5                          9.62%    passed     75.56%
+ 284  ASV474|Pleurosigma|99.0                          9.62%    passed     99.44%
+ 285  ASV536|Pleurosigma|100.0                         9.62%    passed     99.95%
+ 286  ASV549|Pleurosigma|100.0                         9.62%    passed     98.00%
+ 287  ASV238|Pleurosigma|100.0                         9.62%    passed     93.86%
+ 288  ASV207|Proschkinia|100.0                         9.62%    passed     87.50%
+ 289  ASV314|Proschkinia|100.0                         9.62%    passed     70.98%
+ 290  ASV315|Proschkinia|100.0                         9.62%    passed     67.48%
+ 291  ASV316|Proschkinia|100.0                         9.62%    passed     61.80%
+ 292  ASV122|Biremis|91.2                              9.62%    passed     86.58%
+ 293  ASV123|Biremis|82.5                              9.62%    passed     96.21%
+ 294  ASV307|Fallacia|95.1                             9.62%    passed     82.85%
+ 295  ASV496|Fallacia|88.5                             9.62%    passed     89.32%
+ 296  ASV501|Fallacia|94.9                             9.62%    passed     81.07%
+ 297  ASV113|Mayamaea|100.0                            9.62%    passed     83.35%
+ 298  ASV56|Sellaphora|100.0                           9.62%    passed     95.24%
+ 299  ASV108|family_Sellaphoraceae|78.0                9.62%    passed     96.79%
+ 300  ASV109|family_Sellaphoraceae|78.3                9.97%    passed     96.30%
+ 301  ASV261|Astartiella|76.8                          9.62%    passed     93.77%
+ 302  ASV262|Astartiella|91.8                          9.62%    passed     87.14%
+ 303  ASV110|Schizostauron|77.2                        9.62%    passed     94.88%
+ 304  ASV111|Schizostauron|99.7                        9.62%    passed     77.02%
+ 305  ASV128|Schizostauron|79.1                        9.62%    passed     86.29%
+ 306  ASV502|family_Stauroneidaceae|81.1               9.62%    passed     95.25%
+ 307  ASV57|order_Naviculales|88.2                     9.62%    passed     98.52%
+ 308  ASV79|order_Naviculales|99.3                     9.62%    passed     94.59%
+ 309  ASV160|order_Naviculales|79.7                    9.62%    passed     77.92%
+ 310  ASV220|order_Naviculales|71.4                    9.62%    passed     92.36%
+ 311  ASV230|order_Naviculales|79.0                    9.62%    passed     98.83%
+ 312  ASV459|order_Naviculales|100.0                   9.62%    passed     99.78%
+ 313  ASV476|order_Naviculales|98.0                    9.62%    passed     94.25%
+ 314  ASV566|order_Naviculales|90.4                    9.62%    passed     89.86%
+ 315  ASV121|Epithemia|86.5                            9.62%    passed     93.58%
+ 316  ASV293|Epithemia|99.7                            9.62%    passed     98.51%
+ 317  ASV480|Epithemia|98.7                            9.62%    passed     97.66%
+ 318  ASV503|Epithemia|100.0                           9.62%    passed     98.15%
+ 319  ASV507|Epithemia|99.0                            9.62%    passed     93.42%
+ 320  ASV616|Epithemia|93.5                            9.62%    passed     89.03%
+ 321  ASV290|Epithemia|89.1                            9.62%    passed     97.90%
+ 322  ASV289|Entomoneis|98.1                           9.62%    passed     99.29%
+ 323  ASV352|Entomoneis|92.3                           9.62%    passed     84.65%
+ 324  ASV117|Entomoneis|100.0                          9.62%    passed     76.97%
+ 325  ASV120|Entomoneis|90.0                           9.62%    passed     99.95%
+ 326  ASV291|Entomoneis|90.0                           9.62%    passed     91.61%
+ 327  ASV506|Entomoneis|95.0                           9.62%    passed     96.06%
+ 328  ASV528|Entomoneis|77.8                           9.62%    passed     93.20%
+ 329  ASV288|Entomoneis|71.3                           9.62%    passed     98.87%
+ 330  ASV505|Entomoneis|100.0                          9.62%    passed     96.75%
+ 331  ASV73|Campylodiscus|96.5                         9.62%    passed     98.81%
+ 332  ASV329|order_Surirellales|71.7                   9.62%    passed     73.09%
+ 333  ASV552|Amphora|74.3                              9.62%    passed     98.11%
+ 334  ASV298|Amphora|70.6                              9.62%    passed     99.50%
+ 335  ASV414|Amphora|96.8                              9.62%    passed     87.85%
+ 336  ASV415|Amphora|75.7                              9.62%    passed     93.50%
+ 337  ASV416|Amphora|94.8                              9.62%    passed     80.26%
+ 338  ASV294|Amphora|99.5                              9.62%    passed     97.86%
+ 339  ASV295|Amphora|92.5                              9.62%    passed     99.55%
+ 340  ASV296|Amphora|99.2                              2.75%    passed     96.81%
+ 341  ASV297|Amphora|96.6                              9.62%    passed     99.32%
+ 342  ASV299|Amphora|99.9                              9.62%    passed     98.76%
+ 343  ASV300|Amphora|100.0                             9.62%    passed     98.76%
+ 344  ASV301|Amphora|100.0                             9.62%    passed     98.65%
+ 345  ASV508|Amphora|99.6                              9.62%    passed     99.46%
+ 346  ASV509|Amphora|97.5                              9.62%    passed     98.84%
+ 347  ASV512|Amphora|100.0                             9.62%    passed     97.40%
+ 348  ASV513|Amphora|100.0                             9.62%    passed     98.40%
+ 349  ASV88|Amphora|78.3                               9.62%    passed     76.53%
+ 350  ASV93|Amphora|74.2                               9.62%    passed     78.38%
+ 351  ASV124|Amphora|91.8                              9.62%    passed     92.94%
+ 352  ASV125|Amphora|83.9                              9.62%    passed     94.88%
+ 353  ASV243|Amphora|98.3                              9.62%    passed     60.60%
+ 354  ASV244|Amphora|97.1                              9.62%    passed     71.93%
+ 355  ASV245|Amphora|91.9                              9.62%    passed     63.22%
+ 356  ASV246|Amphora|97.7                              9.62%    passed     72.98%
+ 357  ASV248|Amphora|85.7                              2.75%    passed     53.24%
+ 358  ASV252|Amphora|91.1                              9.62%    passed     78.60%
+ 359  ASV253|Amphora|92.8                              2.75%    passed     66.49%
+ 360  ASV254|Amphora|84.8                              2.75%    passed     61.55%
+ 361  ASV255|Amphora|86.7                              9.62%    passed     79.42%
+ 362  ASV256|Amphora|81.1                              9.62%    passed     87.50%
+ 363  ASV241|Amphora|98.5                              9.62%    passed     97.88%
+ 364  ASV514|Amphora|71.9                              9.62%    passed     92.79%
+ 365  ASV567|Amphora|99.6                              9.62%    passed     97.45%
+ 366  ASV568|Amphora|99.5                              9.62%    passed     99.69%
+ 367  ASV569|Amphora|100.0                             9.62%    passed     97.34%
+ 368  ASV594|Amphora|76.9                              9.62%    passed     39.14%
+ 369  ASV495|Halamphora|98.0                           9.62%    passed     98.51%
+ 370  ASV91|Halamphora|93.4                            2.75%    passed     86.63%
+ 371  ASV92|Halamphora|93.4                            2.75%    passed     85.22%
+ 372  ASV141|Halamphora|71.0                           9.62%    passed     94.97%
+ 373  ASV143|Halamphora|76.3                           9.62%    passed     97.37%
+ 374  ASV61|Halamphora|74.2                            9.62%    passed     94.52%
+ 375  ASV71|Halamphora|99.6                            9.62%    passed     76.39%
+ 376  ASV72|Halamphora|98.5                            9.62%    passed     91.61%
+ 377  ASV95|Halamphora|91.9                            9.62%    passed     99.78%
+ 378  ASV103|Halamphora|89.4                           9.62%    passed     52.74%
+ 379  ASV114|Halamphora|80.7                           2.75%    passed     94.35%
+ 380  ASV115|Halamphora|97.7                           9.62%    passed     97.22%
+ 381  ASV116|Halamphora|98.5                           9.62%    passed     92.14%
+ 382  ASV119|Halamphora|92.2                           9.62%    passed     81.60%
+ 383  ASV129|Halamphora|94.7                           9.62%    passed     98.92%
+ 384  ASV130|Halamphora|91.8                           9.62%    passed     99.32%
+ 385  ASV133|Halamphora|94.4                           9.62%    passed     96.20%
+ 386  ASV134|Halamphora|95.6                           9.62%    passed     96.94%
+ 387  ASV135|Halamphora|80.3                           9.62%    passed     94.80%
+ 388  ASV136|Halamphora|95.6                           9.62%    passed     96.94%
+ 389  ASV138|Halamphora|92.8                           9.62%    passed     82.68%
+ 390  ASV139|Halamphora|95.6                           9.62%    passed     97.95%
+ 391  ASV140|Halamphora|96.1                           2.75%    passed     99.93%
+ 392  ASV142|Halamphora|81.1                           9.62%    passed     98.71%
+ 393  ASV250|Halamphora|99.4                           9.62%    passed     99.29%
+ 394  ASV265|Halamphora|99.2                           9.62%    passed     89.69%
+ 395  ASV280|Halamphora|72.8                           9.62%    passed     96.82%
+ 396  ASV281|Halamphora|93.2                           9.62%    passed     95.73%
+ 397  ASV282|Halamphora|94.7                           9.62%    passed     96.22%
+ 398  ASV312|Halamphora|93.6                           9.62%    passed     95.86%
+ 399  ASV313|Halamphora|89.9                           9.62%    passed     93.48%
+ 400  ASV318|Halamphora|85.0                           9.62%    passed     99.47%
+ 401  ASV319|Halamphora|82.1                           2.75%    passed     95.19%
+ 402  ASV320|Halamphora|79.0                           2.75%    passed     86.99%
+ 403  ASV321|Halamphora|75.8                           2.75%    passed     94.14%
+ 404  ASV322|Halamphora|93.8                           9.62%    passed     98.11%
+ 405  ASV323|Halamphora|78.4                           2.75%    passed     91.78%
+ 406  ASV324|Halamphora|81.3                           2.75%    passed     95.19%
+ 407  ASV325|Halamphora|76.6                           2.75%    passed     91.37%
+ 408  ASV326|Halamphora|89.3                           9.62%    passed     99.02%
+ 409  ASV339|Halamphora|89.3                           9.62%    passed     89.65%
+ 410  ASV351|Halamphora|95.2                           9.62%    passed     82.75%
+ 411  ASV361|Halamphora|93.2                           9.62%    passed     99.09%
+ 412  ASV529|Halamphora|96.9                           9.62%    passed     98.64%
+ 413  ASV533|Halamphora|96.3                           9.62%    passed     99.85%
+ 414  ASV534|Halamphora|90.2                           2.75%    passed     98.90%
+ 415  ASV535|Halamphora|97.8                           9.62%    passed     99.95%
+ 416  ASV99|Halamphora|83.7                            9.62%    passed     99.47%
+ 417  ASV86|Halamphora|83.0                            9.62%    passed     90.15%
+ 418  ASV89|Halamphora|95.0                            9.62%    passed     83.28%
+ 419  ASV131|Halamphora|87.6                           9.62%    passed     99.00%
+ 420  ASV137|Halamphora|98.0                           9.62%    passed     95.86%
+ 421  ASV144|Halamphora|87.9                           9.62%    passed     88.95%
+ 422  ASV257|Halamphora|91.7                           9.62%    passed     99.87%
+ 423  ASV317|Halamphora|89.1                           9.62%    passed     99.50%
+ 424  ASV340|Halamphora|98.0                           9.62%    passed     77.26%
+ 425  ASV526|Halamphora|72.7                           9.62%    passed     96.99%
+ 426  ASV94|family_Catenulaceae|96.2                   9.62%    passed     78.75%
+ 427  ASV102|family_Catenulaceae|76.4                  9.62%    passed     76.39%
+ 428  ASV145|family_Catenulaceae|99.0                  9.62%    passed     89.67%
+ 429  ASV286|family_Catenulaceae|74.7                  9.62%    passed     99.25%
+ 430  ASV306|family_Catenulaceae|79.7                  9.62%    passed     89.12%
+ 431  ASV331|family_Catenulaceae|81.1                  9.62%    passed     75.26%
+ 432  ASV332|family_Catenulaceae|87.3                  9.62%    passed     81.08%
+ 433  ASV50|class_Bacillariophyceae|83.9               9.62%    passed     92.37%
+ 434  ASV68|class_Bacillariophyceae|93.4               9.62%    passed     64.24%
+ 435  ASV69|class_Bacillariophyceae|77.9              17.53%    passed     44.93%
+ 436  ASV70|class_Bacillariophyceae|77.6               9.62%    passed     49.73%
+ 437  ASV81|class_Bacillariophyceae|89.1               9.62%    passed     78.96%
+ 438  ASV87|class_Bacillariophyceae|100.0              9.62%    passed     78.96%
+ 439  ASV90|class_Bacillariophyceae|100.0              9.62%    passed     88.30%
+ 440  ASV104|class_Bacillariophyceae|78.2              9.62%    passed     70.68%
+ 441  ASV105|class_Bacillariophyceae|96.5              9.62%    passed     77.01%
+ 442  ASV106|class_Bacillariophyceae|97.2              2.75%    passed     81.43%
+ 443  ASV112|class_Bacillariophyceae|99.2              9.62%    passed     98.59%
+ 444  ASV127|class_Bacillariophyceae|90.4              9.62%    passed     89.65%
+ 445  ASV146|class_Bacillariophyceae|81.0              9.62%    passed     99.95%
+ 446  ASV172|class_Bacillariophyceae|73.0              9.62%    passed     99.47%
+ 447  ASV212|class_Bacillariophyceae|97.2              9.62%    passed     96.11%
+ 448  ASV215|class_Bacillariophyceae|100.0             9.62%    passed     94.46%
+ 449  ASV231|class_Bacillariophyceae|99.0              9.62%    passed     98.92%
+ 450  ASV247|class_Bacillariophyceae|98.5             17.53%    passed     79.26%
+ 451  ASV249|class_Bacillariophyceae|98.2              9.62%    passed     72.98%
+ 452  ASV258|class_Bacillariophyceae|96.6              9.62%    passed     78.46%
+ 453  ASV267|class_Bacillariophyceae|75.4              9.62%    passed     92.63%
+ 454  ASV279|class_Bacillariophyceae|75.7              9.62%    passed     87.45%
+ 455  ASV292|class_Bacillariophyceae|98.7              9.62%    passed     94.88%
+ 456  ASV302|class_Bacillariophyceae|87.8              9.62%    passed     64.97%
+ 457  ASV341|class_Bacillariophyceae|81.4              9.62%    passed     94.12%
+ 458  ASV348|class_Bacillariophyceae|100.0             9.62%    passed     83.83%
+ 459  ASV392|class_Bacillariophyceae|100.0             9.62%    passed     92.48%
+ 460  ASV407|class_Bacillariophyceae|99.9              9.62%    passed     69.77%
+ 461  ASV412|class_Bacillariophyceae|79.5              9.62%    passed     92.01%
+ 462  ASV422|class_Bacillariophyceae|97.1              9.62%    passed     99.85%
+ 463  ASV472|class_Bacillariophyceae|91.9              9.62%    passed     57.73%
+ 464  ASV482|class_Bacillariophyceae|99.8              9.62%    passed     93.00%
+ 465  ASV499|class_Bacillariophyceae|99.8              9.62%    passed     88.38%
+ 466  ASV504|class_Bacillariophyceae|99.9              9.62%    passed     99.53%
+ 467  ASV510|class_Bacillariophyceae|92.1              9.62%    passed     96.99%
+ 468  ASV511|class_Bacillariophyceae|95.7              9.62%    passed     96.60%
+ 469  ASV515|class_Bacillariophyceae|99.5              9.62%    passed     97.84%
+ 470  ASV525|class_Bacillariophyceae|87.6              9.62%    passed     97.13%
+ 471  ASV527|class_Bacillariophyceae|96.5              9.62%    passed     92.85%
+ 472  ASV556|class_Bacillariophyceae|76.4              9.62%    passed     96.79%
+ 473  ASV570|class_Bacillariophyceae|93.9              9.62%    passed     68.24%
+ 474  ASV609|class_Bacillariophyceae|71.8              8.59%    passed      7.69%
+ 475  ASV611|class_Bacillariophyceae|91.1              9.62%    passed     86.58%
+ 476  ASV614|class_Bacillariophyceae|97.5              9.62%    passed     91.72%
+ 477  ASV542|Coscinodiscus|100.0                       9.62%    passed     51.24%
+ 478  ASV161|family_Coscinodiscaceae|100.0             9.62%    passed     73.23%
+ 479  ASV342|Hyalodiscus|87.8                          9.62%    passed     92.32%
+ 480  ASV171|Melosira|96.5                             9.62%    passed     92.83%
+ 481  ASV49|Paralia|98.9                               9.62%    passed     96.02%
+ 482  ASV48|Paralia|100.0                              9.62%    passed     84.97%
+ 483  ASV554|class_Coscinodiscophyceae|73.9            9.62%    passed     99.40%
+ 484  ASV486|Gedaniella|100.0                          9.62%    passed     70.45%
+ 485  ASV487|Gedaniella|100.0                          9.62%    passed     74.05%
+ 486  ASV490|Gedaniella|99.1                           9.62%    passed     83.12%
+ 487  ASV485|Gedaniella|99.6                           9.62%    passed     88.96%
+ 488  ASV166|Hyalosynedra|90.1                         9.62%    passed     90.27%
+ 489  ASV167|Hyalosynedra|84.2                         9.62%    passed     99.79%
+ 490  ASV203|Hyalosynedra|77.0                         9.62%    passed     90.03%
+ 491  ASV602|Nanofrustulum|99.9                        9.62%    passed     98.06%
+ 492  ASV46|Neosynedra|100.0                           9.62%    passed     83.02%
+ 493  ASV403|Opephoroidiella|99.8                      9.62%    passed     99.89%
+ 494  ASV390|Plagiostriata|92.5                        9.62%    passed     58.89%
+ 495  ASV354|Serratifera|100.0                         9.62%    passed     79.85%
+ 496  ASV355|Serratifera|99.9                          9.62%    passed     58.79%
+ 497  ASV191|Tabularia|100.0                           9.62%    passed     99.67%
+ 498  ASV209|Tabularia|98.9                            9.62%    passed     99.29%
+ 499  ASV210|Tabularia|100.0                           9.62%    passed     99.99%
+ 500  ASV494|family_Fragilariaceae|100.0               9.62%    passed     87.78%
+ 501  ASV59|Licmophora|100.0                           9.62%    passed     57.52%
+ 502  ASV201|Licmophora|100.0                          9.62%    passed     92.32%
+ 503  ASV169|Licmophora|71.6                           9.62%    passed     89.37%
+ 504  ASV187|Licmophora|76.5                           9.62%    passed     91.77%
+ 505  ASV188|Licmophora|100.0                          9.62%    passed     69.39%
+ 506  ASV213|Licmophora|77.3                           9.62%    passed     80.85%
+ 507  ASV303|Licmophora|94.6                           9.62%    passed     89.37%
+ 508  ASV304|Licmophora|99.5                           9.62%    passed     56.20%
+ 509  ASV305|Licmophora|100.0                          9.62%    passed     62.40%
+ 510  ASV308|Licmophora|100.0                          9.62%    passed     71.37%
+ 511  ASV309|Licmophora|100.0                          9.62%    passed     62.40%
+ 512  ASV310|Licmophora|100.0                          9.62%    passed     59.62%
+ 513  ASV311|Licmophora|99.9                           9.62%    passed     55.10%
+ 514  ASV544|Licmophora|99.3                           9.62%    passed     65.45%
+ 515  ASV553|Licmophora|75.5                           9.62%    passed     68.72%
+ 516  ASV170|Licmophora|98.8                           9.62%    passed     94.99%
+ 517  ASV175|Hyalosira|100.0                           9.62%    passed     96.58%
+ 518  ASV176|Hyalosira|94.3                            9.62%    passed     97.66%
+ 519  ASV168|Thalassionema|100.0                       9.62%    passed     88.49%
+ 520  ASV185|class_Fragilariophyceae|97.2              9.62%    passed     90.50%
+ 521  ASV186|class_Fragilariophyceae|97.6              9.62%    passed     94.40%
+ 522  ASV271|class_Fragilariophyceae|77.2              9.62%    passed     90.71%
+ 523  ASV272|class_Fragilariophyceae|71.8              9.62%    passed     92.96%
+ 524  ASV266|Trigonium|98.6                            9.62%    passed     96.22%
+ 525  ASV591|Bacteriastrum|72.5                        9.62%    passed     92.61%
+ 526  ASV347|Chaetoceros|100.0                         9.62%    passed     77.26%
+ 527  ASV589|Chaetoceros|98.4                          9.62%    passed     96.76%
+ 528  ASV590|Chaetoceros|93.9                          9.62%    passed     96.54%
+ 529  ASV350|Chaetoceros|99.7                          9.62%    passed     86.95%
+ 530  ASV274|Chaetoceros|95.9                          9.62%    passed     77.08%
+ 531  ASV349|Chaetoceros|99.6                          9.62%    passed     78.29%
+ 532  ASV588|Chaetoceros|100.0                         9.62%    passed     79.10%
+ 533  ASV335|Chaetoceros|100.0                         9.62%    passed     74.08%
+ 534  ASV336|Chaetoceros|100.0                         9.62%    passed     85.34%
+ 535  ASV344|Chaetoceros|100.0                         9.62%    passed     76.96%
+ 536  ASV273|Chaetoceros|99.9                          9.62%    passed     73.81%
+ 537  ASV44|Minutocellus|98.8                          9.62%    passed     69.51%
+ 538  ASV45|Papiliocellulus|99.4                       9.62%    passed     85.55%
+ 539  ASV184|Skeletonema|98.8                          9.62%    passed     96.76%
+ 540  ASV51|Stephanodiscus|94.5                        9.62%    passed     98.79%
+ 541  ASV411|Minidiscus|100.0                          9.62%    passed     96.06%
+ 542  ASV424|Thalassiosira|91.1                        9.62%    passed     93.68%
+ 543  ASV192|Thalassiosira|86.1                        9.62%    passed     90.44%
+ 544  ASV193|Thalassiosira|99.7                        9.62%    passed     71.76%
+ 545  ASV194|Thalassiosira|97.2                        9.62%    passed     79.58%
+ 546  ASV453|Thalassiosira|100.0                       9.62%    passed     93.91%
+ 547  ASV583|order_Thalassiosirales|72.2               9.62%    passed     67.53%
+ 548  ASV545|Toxarium|91.7                             9.62%    passed     85.46%
+ 549  ASV47|Dimeregramma|100.0                         9.62%    passed     87.60%
+ 550  ASV52|family_Plagiogrammaceae|99.8               9.62%    passed     99.85%
+ 551  ASV67|family_Triceratiaceae|99.9                 9.62%    passed     93.79%
+ 552  ASV62|phylum_Bacillariophyta|93.9                9.62%    passed     61.09%
+ 553  ASV64|phylum_Bacillariophyta|98.2                9.62%    passed     66.18%
+ 554  ASV65|phylum_Bacillariophyta|99.1                9.62%    passed     63.98%
+ 555  ASV66|phylum_Bacillariophyta|94.5                9.62%    passed     57.75%
+ 556  ASV74|phylum_Bacillariophyta|86.1                9.62%    passed     93.82%
+ 557  ASV75|phylum_Bacillariophyta|83.4                9.62%    passed     88.96%
+ 558  ASV76|phylum_Bacillariophyta|84.1                9.62%    passed     90.88%
+ 559  ASV77|phylum_Bacillariophyta|70.0                9.62%    passed     90.11%
+ 560  ASV84|phylum_Bacillariophyta|100.0               9.62%    passed     90.75%
+ 561  ASV126|phylum_Bacillariophyta|100.0              9.62%    passed     89.46%
+ 562  ASV173|phylum_Bacillariophyta|100.0              9.62%    passed     95.35%
+ 563  ASV181|phylum_Bacillariophyta|93.2               9.62%    passed     83.10%
+ 564  ASV182|phylum_Bacillariophyta|99.7               9.62%    passed     65.14%
+ 565  ASV183|phylum_Bacillariophyta|90.2               9.62%    passed     85.96%
+ 566  ASV206|phylum_Bacillariophyta|99.2               9.62%    passed     74.68%
+ 567  ASV217|phylum_Bacillariophyta|100.0              9.62%    passed     90.00%
+ 568  ASV264|phylum_Bacillariophyta|100.0              9.62%    passed     87.03%
+ 569  ASV268|phylum_Bacillariophyta|95.2               9.62%    passed     78.35%
+ 570  ASV269|phylum_Bacillariophyta|97.7               9.62%    passed     78.35%
+ 571  ASV270|phylum_Bacillariophyta|97.5               2.75%    passed     77.47%
+ 572  ASV275|phylum_Bacillariophyta|93.4               9.62%    passed     92.83%
+ 573  ASV276|phylum_Bacillariophyta|94.7               9.62%    passed     94.07%
+ 574  ASV277|phylum_Bacillariophyta|96.6               9.62%    passed     94.02%
+ 575  ASV285|phylum_Bacillariophyta|100.0              9.62%    passed     99.25%
+ 576  ASV333|phylum_Bacillariophyta|99.0               8.59%    passed     41.87%
+ 577  ASV345|phylum_Bacillariophyta|99.9               9.62%    passed     91.33%
+ 578  ASV353|phylum_Bacillariophyta|98.2               9.62%    passed     94.30%
+ 579  ASV381|phylum_Bacillariophyta|100.0              9.62%    passed     90.80%
+ 580  ASV383|phylum_Bacillariophyta|100.0              9.62%    passed     89.46%
+ 581  ASV405|phylum_Bacillariophyta|100.0              9.62%    passed     98.32%
+ 582  ASV467|phylum_Bacillariophyta|100.0              9.62%    passed     95.70%
+ 583  ASV477|phylum_Bacillariophyta|100.0              9.62%    passed     88.41%
+ 584  ASV484|phylum_Bacillariophyta|100.0              9.62%    passed     90.44%
+ 585  ASV530|phylum_Bacillariophyta|89.9               9.62%    passed     91.35%
+ 586  ASV531|phylum_Bacillariophyta|99.8               9.62%    passed     84.97%
+ 587  ASV537|phylum_Bacillariophyta|100.0              9.62%    passed     93.42%
+ 588  ASV538|phylum_Bacillariophyta|100.0              9.62%    passed     84.41%
+ 589  ASV557|phylum_Bacillariophyta|98.4               9.62%    passed     72.52%
+ 590  ASV558|phylum_Bacillariophyta|98.9               9.62%    passed     60.60%
+ 591  ASV559|phylum_Bacillariophyta|93.6               9.62%    passed     78.06%
+ 592  ASV560|phylum_Bacillariophyta|99.6               2.75%    passed     75.08%
+ 593  ASV561|phylum_Bacillariophyta|99.6               9.62%    passed     78.06%
+ 594  ASV562|phylum_Bacillariophyta|97.2               9.62%    passed     82.43%
+ 595  ASV563|phylum_Bacillariophyta|93.9               9.62%    passed     89.98%
+ 596  ASV564|phylum_Bacillariophyta|99.6               9.62%    passed     95.33%
+ 597  ASV565|phylum_Bacillariophyta|99.8               9.62%    passed     96.86%
+ 598  ASV571|phylum_Bacillariophyta|96.1               8.59%    passed     87.76%
+ 599  ASV572|phylum_Bacillariophyta|95.4               8.59%    passed     88.56%
+ 600  ASV573|phylum_Bacillariophyta|96.5               8.59%    passed     88.50%
+ 601  ASV574|phylum_Bacillariophyta|98.0               8.59%    passed     99.83%
+ 602  ASV575|phylum_Bacillariophyta|97.6               8.59%    passed     92.55%
+ 603  ASV576|phylum_Bacillariophyta|99.0               8.59%    passed     73.63%
+ 604  ASV577|phylum_Bacillariophyta|97.2               8.59%    passed     96.10%
+ 605  ASV578|phylum_Bacillariophyta|98.3               8.59%    passed     90.32%
+ 606  ASV579|phylum_Bacillariophyta|98.2               8.59%    passed     47.93%
+ 607  ASV580|phylum_Bacillariophyta|98.8               8.59%    passed     39.08%
+ 608  ASV581|phylum_Bacillariophyta|98.6               8.59%    passed     64.02%
+ 609  ASV582|phylum_Bacillariophyta|93.3               8.59%    passed     82.09%
+ 610  ASV586|phylum_Bacillariophyta|98.8               8.59%    passed     28.36%
+ 611  ASV587|phylum_Bacillariophyta|99.3               8.59%    passed     73.57%
+ 612  ASV592|phylum_Bacillariophyta|97.4               9.62%    passed     84.98%
+ 613  ASV612|phylum_Bacillariophyta|100.0              9.62%    passed     77.02%
+ 614  ASV610|Synchroma_ge|82.4                         9.62%    passed     64.06%
+ 615  ASV618|Synchroma_ge|78.2                         9.62%    passed     56.28%
+ 616  ASV613|phylum_Ochrophyta|99.7                    9.62%    passed     58.96%
+ 617  ASV180|subkingdom_Chromobiota|100.0              9.62%    passed     73.10%
+ 618  ASV330|unclassified_Eukaryota|100.0              9.62%    passed     79.90%
+ 619  ASV619|unclassified_Eukaryota|100.0              9.62%    passed     72.06%
+ 620  TB0052|monoculture|Achnanthes_elongata           9.62%    passed     83.93%
+ 621  TB0053|monoculture|Achnanthes_elongata           9.62%    passed     83.93%
+ 622  TB0054|monoculture|Achnanthes_elongata           9.62%    passed     83.93%
+ 623  TB0060|monoculture|Achnanthes_elongata           9.62%    passed     84.50%
+ 624  TB0070|monoculture|Amphora_sp._1                 9.62%    passed     98.11%
+ 625  TB0077|monoculture|Poulinea_lepidochelicola      9.62%    passed     94.88%
+ 626  TB0123|monoculture|Diploneis_sp._1               9.62%    passed     96.99%
+ 627  TB0129|monoculture|Diploneis_sp._2               9.62%    passed     96.99%
+ 628  TB0147|monoculture|Fallacia_sp.                  9.62%    passed     92.92%
+ 629  TB0150|monoculture|Achnanthes_sp.                9.62%    passed     39.14%
+ 630  TB0168|monoculture|Achnanthes_elongata           9.62%    passed     84.50%
+ 631  TB0170|monoculture|Achnanthes_elongata           9.62%    passed     84.50%
+ 632  TB0177|monoculture|Achnanthes_sp.                9.62%    passed     39.14%
+ 633  TB0179|monoculture|Entomoneis_sp.                9.62%    passed     98.87%
+ 634  TB0181|monoculture|Psammodictyon_panduriforme    9.62%    passed     81.88%
+ 635  TB0182|monoculture|Amphora_sp._2                 9.62%    passed     96.86%
+ 636  TB0183|monoculture|Psammodictyon_sp.             9.62%    passed     85.27%
+****  TOTAL                                            9.34%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: TB0052|monoculture|Achnanthes_elongata is identical to ASV382|Nitzschia|76.8 but kept for subsequent analysis
+NOTE: TB0060|monoculture|Achnanthes_elongata is identical to ASV384|family_Bacillariaceae|71.8 but kept for subsequent analysis
+NOTE: TB0123|monoculture|Diploneis_sp._1 is identical to ASV539|Diploneis|79.6 but kept for subsequent analysis
+NOTE: TB0179|monoculture|Entomoneis_sp. is identical to ASV288|Entomoneis|71.3 but kept for subsequent analysis
+NOTE: TB0077|monoculture|Poulinea_lepidochelicola is identical to ASV125|Amphora|83.9 but kept for subsequent analysis
+NOTE: TB0150|monoculture|Achnanthes_sp. is identical to ASV594|Amphora|76.9 but kept for subsequent analysis
+NOTE: TB0070|monoculture|Amphora_sp._1 is identical to ASV322|Halamphora|93.8 but kept for subsequent analysis
+NOTE: 6 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: TB0053|monoculture|Achnanthes_elongata (identical to ASV382|Nitzschia|76.8) is ignored but added at the end
+NOTE: TB0054|monoculture|Achnanthes_elongata (identical to ASV382|Nitzschia|76.8) is ignored but added at the end
+NOTE: TB0168|monoculture|Achnanthes_elongata (identical to ASV384|family_Bacillariaceae|71.8) is ignored but added at the end
+NOTE: TB0170|monoculture|Achnanthes_elongata (identical to ASV384|family_Bacillariaceae|71.8) is ignored but added at the end
+NOTE: TB0129|monoculture|Diploneis_sp._2 (identical to ASV539|Diploneis|79.6) is ignored but added at the end
+NOTE: TB0177|monoculture|Achnanthes_sp. (identical to ASV594|Amphora|76.9) is ignored but added at the end
+Alignment was printed to ngs_mono_merged-alignment.fas.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to ngs_mono_merged-alignment.fas.uniqueseq.phy
+
+NOTE: Restoring information from model checkpoint file ngs_mono_merged-alignment.fas.model.gz
+
+CHECKPOINT: Initial tree restored
+Measuring multi-threading efficiency up to 12 CPU cores
+Increase to 10 rounds for branch lengths
+16 trees examined
+Threads: 1 / Time: 12.526 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -50985
+Threads: 2 / Time: 10.588 sec / Speedup: 1.183 / Efficiency: 59% / LogL: -50985
+Threads: 3 / Time: 10.534 sec / Speedup: 1.189 / Efficiency: 40% / LogL: -50985
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+I+G model...
+CHECKPOINT: Tree restored, LogL: -26115.557
+NOTE: ModelFinder requires 45 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 291) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         30791.322    1265 64112.644    3267092.644  68759.398
+  2  GTR+F+I       29388.565    1266 61309.130    3269353.130  65959.557
+  3  GTR+F+G4      26160.938    1266 54853.876    3262897.876  59504.304
+  4  GTR+F+I+G4    26106.027    1267 54746.054    3267858.054  59400.154
+  5  GTR+F+R2      26809.570    1267 56153.141    3269265.141  60807.241
+  6  GTR+F+R3      26289.782    1269 55117.564    3278377.564  59779.011
+  7  GTR+F+R4      26090.253    1271 54722.506    3288146.506  59391.300
+  8  GTR+F+R5      26036.760    1273 54619.521    3298223.521  59295.661
+  9  GTR+F+R6      26016.411    1275 54582.821    3308382.821  59266.308
+ 10  GTR+F+R7      26010.379    1277 54574.758    3318586.758  59265.592
+ 11  GTR+F+R8      26004.662    1279 54567.323    3328807.323  59265.504
+ 12  GTR+F+R9      26000.349    1281 54562.698    3339046.698  59268.225
+ 22  SYM+R6        26196.922    1272 54937.845    3293449.845  59610.312
+ 23  SYM+R7        26195.214    1274 54938.428    3303638.428  59618.242
+ 35  TVM+F+R6      26097.417    1274 54742.835    3303442.835  59422.649
+ 36  TVM+F+R7      26093.058    1276 54738.115    3313642.115  59425.276
+ 48  TVMe+R6       26263.462    1271 55068.924    3288492.924  59737.718
+ 49  TVMe+R7       26261.501    1273 55069.001    3298673.001  59745.142
+ 61  TIM3+F+R6     26098.068    1273 54742.135    3298346.135  59418.276
+ 62  TIM3+F+R7     26094.766    1275 54739.533    3308539.533  59423.020
+ 74  TIM3e+R6      26388.285    1270 55316.571    3283656.571  59981.692
+ 75  TIM3e+R7      26376.020    1272 55296.040    3293808.040  59968.507
+ 76  TIM3e+R8      26373.747    1274 55295.495    3303995.495  59975.308
+ 87  TIM2+F+R6     26087.944    1273 54721.887    3298325.887  59398.028
+ 88  TIM2+F+R7     26077.702    1275 54705.403    3308505.403  59388.890
+ 89  TIM2+F+R8     26074.889    1277 54703.778    3318715.778  59394.612
+100  TIM2e+R6      26413.066    1270 55366.133    3283706.133  60031.253
+101  TIM2e+R7      26411.394    1272 55366.788    3293878.788  60039.255
+113  TIM+F+R6      26070.880    1273 54687.760    3298291.760  59363.900
+114  TIM+F+R7      26058.274    1275 54666.548    3308466.548  59350.035
+115  TIM+F+R8      26056.133    1277 54666.267    3318678.267  59357.101
+126  TIMe+R6       26407.050    1270 55354.101    3283694.101  60019.221
+127  TIMe+R7       26403.436    1272 55350.872    3293862.872  60023.339
+139  TPM3u+F+R6    26179.886    1272 54903.772    3293415.772  59576.240
+140  TPM3u+F+R7    26176.544    1274 54901.089    3303601.089  59580.902
+152  TPM3+F+R6     26179.886    1272 54903.772    3293415.772  59576.240
+153  TPM3+F+R7     26176.544    1274 54901.089    3303601.089  59580.902
+165  TPM2u+F+R6    26179.039    1272 54902.077    3293414.077  59574.544
+166  TPM2u+F+R7    26174.884    1274 54897.767    3303597.767  59577.581
+178  TPM2+F+R6     26179.039    1272 54902.077    3293414.077  59574.544
+179  TPM2+F+R7     26174.884    1274 54897.767    3303597.767  59577.581
+191  K3Pu+F+R6     26157.395    1272 54858.790    3293370.790  59531.257
+192  K3Pu+F+R7     26153.611    1274 54855.221    3303555.221  59535.035
+204  K3P+R6        26465.401    1269 55468.801    3278728.801  60130.248
+205  K3P+R7        26461.744    1271 55465.488    3288889.488  60134.282
+217  TN+F+R6       26151.343    1272 54846.685    3293358.685  59519.153
+218  TN+F+R7       26142.296    1274 54832.592    3303532.592  59512.406
+219  TN+F+R8       26138.746    1276 54829.492    3313733.492  59516.652
+230  TNe+R6        26563.519    1269 55665.039    3278925.039  60326.486
+231  TNe+R7        26559.898    1271 55661.795    3289085.795  60330.589
+243  HKY+F+R6      26240.802    1271 55023.604    3288447.604  59692.398
+244  HKY+F+R7      26237.180    1273 55020.361    3298624.361  59696.501
+256  K2P+R6        26620.621    1268 55777.241    3273961.241  60435.015
+257  K2P+R7        26617.034    1270 55774.068    3284114.068  60439.189
+269  F81+F+R6      26946.507    1270 56433.014    3284773.014  61098.135
+270  F81+F+R7      26942.894    1272 56429.787    3294941.787  61102.254
+282  JC+R6         27165.988    1267 56865.976    3269977.976  61520.077
+283  JC+R7         27161.616    1269 56861.232    3280121.232  61522.679
+Akaike Information Criterion:           GTR+F+R9
+Corrected Akaike Information Criterion: GTR+F+G4
+Bayesian Information Criterion:         GTR+F+R8
+Best-fit model: GTR+F+R8 chosen according to BIC
+
+All model information printed to ngs_mono_merged-alignment.fas.model.gz
+CPU time for ModelFinder: 819.017 seconds (0h:13m:39s)
+Wall-clock time for ModelFinder: 447.503 seconds (0h:7m:27s)
+Generating 1000 samples for ultrafast bootstrap (seed: 297516)...
+
+NOTE: 36 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -26004.662
+2. Current log-likelihood: -26002.135
+3. Current log-likelihood: -26000.938
+4. Current log-likelihood: -26000.716
+5. Current log-likelihood: -26000.610
+Optimal log-likelihood: -26000.563
+Rate parameters:  A-C: 0.91607  A-G: 2.87456  A-T: 2.21696  C-G: 0.89768  C-T: 5.49276  G-T: 1.00000
+Base frequencies:  A: 0.291  C: 0.175  G: 0.218  T: 0.316
+Site proportion and rates:  (0.523,0.055) (0.061,0.327) (0.053,0.331) (0.036,0.701) (0.067,1.082) (0.067,1.900) (0.102,2.888) (0.090,4.586)
+Parameters optimization took 5 rounds (10.577 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 9.642099 sec (of wall-clock time) 18.265943 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.043233 sec (of wall-clock time) 0.105257 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -26253.659
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 13.448 second
+Computing log-likelihood of 98 initial trees ... 8.514 seconds
+Current best score: -25945.568
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -25771.134
+Iteration 10 / LogL: -25801.465 / Time: 0h:2m:22s
+Iteration 20 / LogL: -25841.651 / Time: 0h:3m:51s
+Finish initializing candidate tree set (20)
+Current best tree score: -25771.134 / CPU time: 210.409
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 22: -25768.287
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 26: -25737.081
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 28: -25719.900
+Iteration 30 / LogL: -25726.025 / Time: 0h:4m:53s (0h:16m:30s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 33: -25712.886
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 34: -25697.531
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 35: -25695.215
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 40: -25692.771
+Iteration 40 / LogL: -25692.771 / Time: 0h:6m:4s (0h:15m:35s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 41: -25647.367
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 42: -25638.929
+Iteration 50 / LogL: -25655.286 / Time: 0h:7m:10s (0h:13m:28s left)
+Log-likelihood cutoff on original alignment: -25878.645
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 56: -25623.930
+Iteration 60 / LogL: -25656.269 / Time: 0h:8m:17s (0h:13m:29s left)
+Iteration 70 / LogL: -25720.901 / Time: 0h:9m:17s (0h:11m:34s left)
+Iteration 80 / LogL: -25647.377 / Time: 0h:10m:13s (0h:9m:49s left)
+Iteration 90 / LogL: -25678.590 / Time: 0h:11m:14s (0h:8m:20s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 91: -25609.681
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 96: -25604.284
+Iteration 100 / LogL: -25620.625 / Time: 0h:12m:20s (0h:11m:58s left)
+Log-likelihood cutoff on original alignment: -25871.140
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.932
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 105: -25597.256
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 109: -25582.466
+Iteration 110 / LogL: -25624.357 / Time: 0h:13m:25s (0h:12m:11s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 115: -25578.572
+Iteration 120 / LogL: -25602.929 / Time: 0h:14m:26s (0h:11m:32s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 127: -25577.232
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 129: -25575.473
+Iteration 130 / LogL: -25597.925 / Time: 0h:15m:22s (0h:11m:47s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 133: -25562.013
+Iteration 140 / LogL: -25588.789 / Time: 0h:16m:21s (0h:10m:56s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 150: -25558.988
+Iteration 150 / LogL: -25558.988 / Time: 0h:17m:20s (0h:11m:38s left)
+Log-likelihood cutoff on original alignment: -25849.189
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 157: -25539.503
+Iteration 160 / LogL: -25571.338 / Time: 0h:18m:29s (0h:11m:17s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 166: -25533.504
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 169: -25530.219
+Iteration 170 / LogL: -25537.606 / Time: 0h:19m:39s (0h:11m:30s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 175: -25515.116
+Iteration 180 / LogL: -25557.575 / Time: 0h:20m:42s (0h:10m:59s left)
+Iteration 190 / LogL: -25560.664 / Time: 0h:21m:43s (0h:9m:46s left)
+Iteration 200 / LogL: -25543.932 / Time: 0h:22m:47s (0h:8m:35s left)
+Log-likelihood cutoff on original alignment: -25814.058
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.861
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 210 / LogL: -25553.632 / Time: 0h:23m:56s (0h:10m:18s left)
+Iteration 220 / LogL: -25553.369 / Time: 0h:24m:58s (0h:9m:7s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 230: -25513.963
+Iteration 230 / LogL: -25513.963 / Time: 0h:25m:59s (0h:11m:21s left)
+Iteration 240 / LogL: -25559.513 / Time: 0h:27m:3s (0h:10m:11s left)
+Iteration 250 / LogL: -25527.088 / Time: 0h:28m:6s (0h:9m:1s left)
+Log-likelihood cutoff on original alignment: -25814.058
+Iteration 260 / LogL: -25558.055 / Time: 0h:29m:9s (0h:7m:52s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 263: -25511.791
+Iteration 270 / LogL: -25542.979 / Time: 0h:30m:12s (0h:10m:26s left)
+Iteration 280 / LogL: -25565.701 / Time: 0h:31m:17s (0h:9m:18s left)
+Iteration 290 / LogL: -25518.673 / Time: 0h:32m:16s (0h:8m:9s left)
+Iteration 300 / LogL: -25515.647 / Time: 0h:33m:12s (0h:6m:59s left)
+Log-likelihood cutoff on original alignment: -25808.865
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.928
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 301: -25508.872
+Iteration 310 / LogL: -25574.498 / Time: 0h:34m:18s (0h:10m:6s left)
+Iteration 320 / LogL: -25519.404 / Time: 0h:35m:14s (0h:8m:56s left)
+Iteration 330 / LogL: -25544.974 / Time: 0h:36m:3s (0h:7m:46s left)
+Iteration 340 / LogL: -25587.695 / Time: 0h:37m:2s (0h:6m:39s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 342: -25507.441
+Iteration 350 / LogL: -25543.461 / Time: 0h:37m:55s (0h:9m:59s left)
+Log-likelihood cutoff on original alignment: -25804.126
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 360: -25506.313
+Iteration 360 / LogL: -25506.313 / Time: 0h:38m:55s (0h:10m:50s left)
+Iteration 370 / LogL: -25543.091 / Time: 0h:39m:56s (0h:9m:44s left)
+Iteration 380 / LogL: -25523.603 / Time: 0h:40m:53s (0h:8m:37s left)
+Iteration 390 / LogL: -25654.595 / Time: 0h:41m:53s (0h:7m:32s left)
+Iteration 400 / LogL: -25534.316 / Time: 0h:42m:52s (0h:6m:26s left)
+Log-likelihood cutoff on original alignment: -25804.126
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.976
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 410 / LogL: -25527.187 / Time: 0h:43m:43s (0h:9m:37s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 419: -25501.844
+Iteration 420 / LogL: -25509.905 / Time: 0h:44m:38s (0h:10m:32s left)
+Iteration 430 / LogL: -25522.894 / Time: 0h:45m:28s (0h:9m:26s left)
+Iteration 440 / LogL: -25514.713 / Time: 0h:46m:21s (0h:8m:20s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 445: -25499.243
+Iteration 450 / LogL: -25529.226 / Time: 0h:47m:24s (0h:10m:1s left)
+Log-likelihood cutoff on original alignment: -25804.126
+Iteration 460 / LogL: -25562.732 / Time: 0h:48m:32s (0h:8m:59s left)
+Iteration 470 / LogL: -25552.219 / Time: 0h:49m:34s (0h:7m:55s left)
+Iteration 480 / LogL: -25574.820 / Time: 0h:50m:40s (0h:6m:52s left)
+Iteration 490 / LogL: -25533.137 / Time: 0h:51m:39s (0h:5m:48s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 492: -25488.882
+Iteration 500 / LogL: -25519.630 / Time: 0h:52m:39s (0h:9m:42s left)
+Log-likelihood cutoff on original alignment: -25804.126
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.982
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 510 / LogL: -25535.939 / Time: 0h:53m:43s (0h:9m:29s left)
+Iteration 520 / LogL: -25530.289 / Time: 0h:54m:49s (0h:8m:27s left)
+Iteration 530 / LogL: -25515.234 / Time: 0h:56m:0s (0h:7m:24s left)
+Iteration 540 / LogL: -25505.855 / Time: 0h:57m:10s (0h:6m:21s left)
+Iteration 550 / LogL: -25518.653 / Time: 0h:58m:18s (0h:5m:18s left)
+Log-likelihood cutoff on original alignment: -25804.126
+Iteration 560 / LogL: -25518.691 / Time: 0h:59m:29s (0h:4m:15s left)
+Iteration 570 / LogL: -25523.903 / Time: 1h:0m:35s (0h:3m:11s left)
+Iteration 580 / LogL: -25504.839 / Time: 1h:1m:47s (0h:2m:8s left)
+Iteration 590 / LogL: -25529.945 / Time: 1h:2m:54s (0h:1m:4s left)
+Iteration 600 / LogL: -25520.944 / Time: 1h:3m:59s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -25804.126
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.988
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 610 / LogL: -25532.761 / Time: 1h:5m:9s (0h:9m:37s left)
+Iteration 620 / LogL: -25506.336 / Time: 1h:6m:21s (0h:8m:34s left)
+Iteration 630 / LogL: -25569.919 / Time: 1h:7m:28s (0h:7m:30s left)
+Iteration 640 / LogL: -25551.880 / Time: 1h:8m:35s (0h:6m:26s left)
+Iteration 650 / LogL: -25511.057 / Time: 1h:9m:41s (0h:5m:22s left)
+Log-likelihood cutoff on original alignment: -25804.126
+Iteration 660 / LogL: -25537.381 / Time: 1h:10m:46s (0h:4m:17s left)
+Iteration 670 / LogL: -25534.616 / Time: 1h:11m:54s (0h:3m:13s left)
+Iteration 680 / LogL: -25510.468 / Time: 1h:13m:4s (0h:2m:9s left)
+Iteration 690 / LogL: -25520.329 / Time: 1h:14m:2s (0h:1m:4s left)
+Iteration 700 / LogL: -25562.672 / Time: 1h:15m:8s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -25804.126
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.986
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 710 / LogL: -25530.935 / Time: 1h:16m:16s (0h:9m:40s left)
+Iteration 720 / LogL: -25526.138 / Time: 1h:17m:19s (0h:8m:36s left)
+Iteration 730 / LogL: -25573.829 / Time: 1h:18m:22s (0h:7m:31s left)
+Iteration 740 / LogL: -25515.793 / Time: 1h:19m:26s (0h:6m:27s left)
+Iteration 750 / LogL: -25528.567 / Time: 1h:20m:36s (0h:5m:22s left)
+Log-likelihood cutoff on original alignment: -25804.126
+Iteration 760 / LogL: -25523.807 / Time: 1h:21m:42s (0h:4m:18s left)
+Iteration 770 / LogL: -25561.736 / Time: 1h:22m:42s (0h:3m:13s left)
+Iteration 780 / LogL: -25526.448 / Time: 1h:23m:54s (0h:2m:9s left)
+Iteration 790 / LogL: -25498.246 / Time: 1h:24m:56s (0h:1m:4s left)
+Iteration 800 / LogL: -25514.197 / Time: 1h:25m:59s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -25804.126
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.988
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 810 / LogL: -25517.058 / Time: 1h:27m:14s (0h:9m:42s left)
+Iteration 820 / LogL: -25521.170 / Time: 1h:28m:31s (0h:8m:38s left)
+Iteration 830 / LogL: -25525.505 / Time: 1h:29m:36s (0h:7m:34s left)
+Iteration 840 / LogL: -25661.731 / Time: 1h:30m:36s (0h:6m:28s left)
+Iteration 850 / LogL: -25576.464 / Time: 1h:31m:44s (0h:5m:24s left)
+Log-likelihood cutoff on original alignment: -25804.126
+Iteration 860 / LogL: -25509.025 / Time: 1h:32m:46s (0h:4m:19s left)
+Iteration 870 / LogL: -25538.904 / Time: 1h:33m:46s (0h:3m:14s left)
+Iteration 880 / LogL: -25529.567 / Time: 1h:34m:52s (0h:2m:9s left)
+Iteration 890 / LogL: -25521.421 / Time: 1h:35m:52s (0h:1m:4s left)
+Iteration 900 / LogL: -25500.710 / Time: 1h:36m:52s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -25804.126
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.986
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 910 / LogL: -25513.861 / Time: 1h:38m:0s (0h:9m:42s left)
+Iteration 920 / LogL: -25544.387 / Time: 1h:39m:5s (0h:8m:37s left)
+Iteration 930 / LogL: -25577.619 / Time: 1h:40m:4s (0h:7m:32s left)
+Iteration 940 / LogL: -25508.145 / Time: 1h:41m:6s (0h:6m:27s left)
+Iteration 950 / LogL: -25526.845 / Time: 1h:42m:11s (0h:5m:23s left)
+Log-likelihood cutoff on original alignment: -25804.126
+Iteration 960 / LogL: -25517.307 / Time: 1h:43m:16s (0h:4m:18s left)
+Iteration 970 / LogL: -25520.625 / Time: 1h:44m:14s (0h:3m:13s left)
+Iteration 980 / LogL: -25525.083 / Time: 1h:45m:18s (0h:2m:9s left)
+Iteration 990 / LogL: -25522.665 / Time: 1h:46m:25s (0h:1m:4s left)
+Iteration 1000 / LogL: -25513.185 / Time: 1h:47m:31s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -25804.126
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.985
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+WARNING: bootstrap analysis did not converge. You should rerun with higher number of iterations (-nm option)
+TREE SEARCH COMPLETED AFTER 1001 ITERATIONS / Time: 1h:47m:40s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -25488.882
+2. Current log-likelihood: -25488.812
+Optimal log-likelihood: -25488.809
+Rate parameters:  A-C: 0.87618  A-G: 2.89115  A-T: 2.24448  C-G: 0.85038  C-T: 5.88587  G-T: 1.00000
+Base frequencies:  A: 0.291  C: 0.175  G: 0.218  T: 0.316
+Site proportion and rates:  (0.516,0.053) (0.048,0.297) (0.057,0.297) (0.072,0.627) (0.062,1.237) (0.093,2.196) (0.074,3.356) (0.077,4.750)
+Parameters optimization took 2 rounds (1.586 sec)
+BEST SCORE FOUND : -25488.809
+Creating bootstrap support values...
+Split supports printed to NEXUS file ngs_mono_merged-alignment.fas.splits.nex
+Total tree length: 29.591
+
+Total number of iterations: 1001
+CPU time used for tree search: 11786.880 sec (3h:16m:26s)
+Wall-clock time used for tree search: 6439.176 sec (1h:47m:19s)
+Total CPU time used: 11833.000 sec (3h:17m:12s)
+Total wall-clock time used: 6466.149 sec (1h:47m:46s)
+
+Computing bootstrap consensus tree...
+Reading input file ngs_mono_merged-alignment.fas.splits.nex...
+630 taxa and 5213 splits.
+Consensus tree written to ngs_mono_merged-alignment.fas.contree
+Reading input trees file ngs_mono_merged-alignment.fas.contree
+Log-likelihood of consensus tree: -25488.647
+
+Analysis results written to: 
+  IQ-TREE report:                ngs_mono_merged-alignment.fas.iqtree
+  Maximum-likelihood tree:       ngs_mono_merged-alignment.fas.treefile
+  Likelihood distances:          ngs_mono_merged-alignment.fas.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ngs_mono_merged-alignment.fas.splits.nex
+  Consensus tree:                ngs_mono_merged-alignment.fas.contree
+  Screen log file:               ngs_mono_merged-alignment.fas.log
+
+Date and Time: Thu Dec  2 15:37:47 2021
