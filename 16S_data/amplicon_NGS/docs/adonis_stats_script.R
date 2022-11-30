@@ -4,6 +4,7 @@ library(qiime2R) #qiime to R import qza v0.99.6
 library(tidyverse) #v1.3.1
 library(vegan) #2.5.7
 library(pairwiseAdonis) #v0.4
+library(magrittr) #v2.0.1
 
 set.seed(19121216)
 
