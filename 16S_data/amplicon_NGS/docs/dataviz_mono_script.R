@@ -10,6 +10,7 @@ library(patchwork) #collect multiple ggplots together v1.1.1
 library(ggrepel) #repel text/labels v0.9.1
 library(ggforce) #v0.3.3
 library(ggtext) #v0.1.1
+library(magrittr) #v2.0.1
 
 #set global theme for ggplot
 theme_set(theme_light(base_size = 11, base_family = "Lato"))
