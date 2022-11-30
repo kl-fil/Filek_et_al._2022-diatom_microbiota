@@ -11,7 +11,8 @@ library(ggrepel) #repel text/labels v0.9.1
 library(ggforce) #v0.3.3
 library(ggtext) #v0.1.1
 library(vegan) #v2.5.7
-library(ggdendro) #0.1.22
+library(ggdendro) #v0.1.22
+library(magrittr) #v2.0.1
 
 
 #set global theme for ggplot
