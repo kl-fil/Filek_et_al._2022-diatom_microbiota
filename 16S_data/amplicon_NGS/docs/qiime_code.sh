@@ -1,6 +1,9 @@
 #----------------------------------------------------------------------------	
 # QIIME2 16S NGS data analyses for TurtleBIOME project (Bosak lab, University
 # of Zagreb)
+# Paper: Filek et al. (2022) More than just hitchhikers: a survey of bacterial
+# communities associated with diatoms originating from sea turtles; FEMS      
+# Microbiology Ecology; DOI: 10.1093/femsec/fiac104
 # By: Klara Filek
 # Region: V4 region of 16S rRNA gene
 # Primers: 515F and 806R (Apprill et al. 2015; Parada et al. 2016)
